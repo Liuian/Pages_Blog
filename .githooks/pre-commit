@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# 這是 pre-commit hook，自動從 README.md 生成 index.md（含 Jekyll front matter）
+
+echo "---" > index.md
+echo "layout: default" >> index.md
+echo "title: Home" >> index.md
+echo "---" >> index.md
+echo "" >> index.md
+
+cat README.md >> index.md
+
+echo "[pre-commit] index.md has been updated from README.md"
