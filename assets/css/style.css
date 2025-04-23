@@ -3,6 +3,11 @@
   }
    */
 
-.footer p {
+/* .footer p {
 display: none !important;
-}
+} */
+
+.footer {
+    visibility: hidden;
+  }
+  
