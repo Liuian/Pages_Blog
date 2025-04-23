@@ -1,4 +1,8 @@
-.footer {
+/* .footer {
     display: none !important;
   }
-  
+   */
+
+.footer p {
+display: none !important;
+}
