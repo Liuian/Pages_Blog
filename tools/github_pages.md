@@ -6,7 +6,7 @@ title: Github Pages
 # 利用 Github Pages 免費架一個靜態網頁
 
 ## Step 0: 靜態網頁 vs. 動態網頁
-![image](../assests/images/tools/static_vs_dynamic_web_page.jpg)
+![image](../assets/images/tools/static_vs_dynamic_web_page.jpg)
 
 ## Step 1: 設定自動同步 readme.md & index.md 腳本
 
@@ -126,7 +126,7 @@ baseurl: "/pages-blog"
 然後在你的 `.md` 或 HTML 裡寫：
 
 ```liquid
-![for loop]({{ site.baseurl }}/assests/images/tools/flowchart-for-loop.jpeg)
+![for loop](../assets/images/tools/flowchart-for-loop.jpeg)
 ```
 
 這樣無論你網站部署在哪個路徑（子資料夾），都會顯示正確！

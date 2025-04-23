@@ -7,7 +7,7 @@ title: Wins
 
 ## search ip
 - `ipconfig`
-    - ![alt text](../assests/images/tools/wins-1.png)
+    - ![alt text](../assets/images/tools/wins-1.png)
 
 ## Microsoft-Windows-Subsystem-Linux
 0. `以管理員身分執行`開啟終端機
@@ -18,7 +18,7 @@ title: Wins
 4. 查看電腦品牌: 
     - 按下 Win + R，输入 msinfo32，然后按回车打开 系统信息 窗口。
     - 在系统信息窗口中，找到 系统制造商（System Manufacturer） 和 系统型号（System Model）。这将显示你的电脑品牌和型号。
-    - ![alt text](../assests/images/tools/wins-2.png)
+    - ![alt text](../assets/images/tools/wins-2.png)
 5. 無法使用，要在 Lenovo 电脑上启用虚拟化支持（Intel VT-x 或 AMD-V），请按照以下步骤操作：
     - 重启电脑：
         - 完全关机或重启你的 Lenovo 电脑。
@@ -44,15 +44,15 @@ title: Wins
 
 ## Microsoft-Windows-Subsystem-Linux 連到遠端server
 1. `this pc` -> `map network drive`
-    - ![alt text](../assests/images/tools/wins-linux-server-0.png)
-    - ![alt text](../assests/images/tools/wins-linux-server-1.png)
-    - ![alt text](../assests/images/tools/wins-linux-server-2.png)
+    - ![alt text](../assets/images/tools/wins-linux-server-0.png)
+    - ![alt text](../assets/images/tools/wins-linux-server-1.png)
+    - ![alt text](../assets/images/tools/wins-linux-server-2.png)
 2. in wins powershell: 
     - `wsl`
     - `sudo mkdir -p /mnt/z`
     - `sudo mount -t drvfs Z: /mnt/z`
     - `cd /mnt/z`
-    - ![alt text](../assests/images/tools/wins-linux-server-3.png)
+    - ![alt text](../assets/images/tools/wins-linux-server-3.png)
 
 - **error**
     - It looks like /mnt/z is mounted, but it’s empty when you run ls. WSL didn't properly mount Z: from Windows – A configuration issue.
@@ -91,8 +91,8 @@ title: Wins
 ## Windows Terminal 
 - split windows: `Shift + Alt + +/-`
 - split windows: Right-click on the PowerShell icon in the taskbar and select `split tab`.
-    - ![alt text](../assests/images/tools/wins-4.png)
-    - ![alt text](../assests/images/tools/wins-3.png)
+    - ![alt text](../assets/images/tools/wins-4.png)
+    - ![alt text](../assets/images/tools/wins-3.png)
 - `alt` + `shift` + `↑ / ↓ / ← / →` ：調整窗格大小
 - `alt` + `↑ / ↓ / ← / →` ：移動窗格焦點 （Move focus ）
 - Switch to Disk D: command: `D:`
@@ -105,4 +105,4 @@ title: Wins
 ### synchronize
 - `comparision criteria` choose `File size`
 - `sychronize options` choose `preview changes`
-- ![alt text](../assests/images/tools/winscp-1.png)
+- ![alt text](../assets/images/tools/winscp-1.png)
