@@ -113,3 +113,20 @@ layout: default
 title: Home
 ---
 ```
+
+## Step 3: 插入圖片
+### 方法二：用 site.url 和 site.baseurl（比較通用）
+
+你可以在 `_config.yml` 裡加上：
+
+```yaml
+baseurl: "/pages-blog"
+```
+
+然後在你的 `.md` 或 HTML 裡寫：
+
+```liquid
+![for loop]({{ site.baseurl }}/assests/images/tools/flowchart-for-loop.jpeg)
+```
+
+這樣無論你網站部署在哪個路徑（子資料夾），都會顯示正確！
