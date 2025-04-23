@@ -130,3 +130,9 @@ baseurl: "/pages-blog"
 ```
 
 這樣無論你網站部署在哪個路徑（子資料夾），都會顯示正確！
+
+## Note: 如果 deployment 卡住
+```bash
+git commit --amend --no-edit
+git push origin main --force
+```

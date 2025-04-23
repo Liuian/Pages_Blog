@@ -7,7 +7,7 @@ title: Wins
 
 ## search ip
 - `ipconfig`
-    - ![alt text](/assests/images/tools/wins-1.png)
+    - ![alt text](../assests/images/tools/wins-1.png)
 
 ## Microsoft-Windows-Subsystem-Linux
 0. `以管理員身分執行`開啟終端機
@@ -18,7 +18,7 @@ title: Wins
 4. 查看電腦品牌: 
     - 按下 Win + R，输入 msinfo32，然后按回车打开 系统信息 窗口。
     - 在系统信息窗口中，找到 系统制造商（System Manufacturer） 和 系统型号（System Model）。这将显示你的电脑品牌和型号。
-    - ![alt text](/assests/images/tools/wins-2.png)
+    - ![alt text](../assests/images/tools/wins-2.png)
 5. 無法使用，要在 Lenovo 电脑上启用虚拟化支持（Intel VT-x 或 AMD-V），请按照以下步骤操作：
     - 重启电脑：
         - 完全关机或重启你的 Lenovo 电脑。
