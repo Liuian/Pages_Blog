@@ -6,7 +6,7 @@ title: Github Pages
 # 利用 Github Pages 免費架一個靜態網頁
 
 ## Step 0: 靜態網頁 vs. 動態網頁
-![image](/assests/images/tools/static_vs_dynamic_web_page.jpg)
+![image](../assests/images/tools/static_vs_dynamic_web_page.jpg)
 
 ## Step 1: 設定自動同步 readme.md & index.md 腳本
 

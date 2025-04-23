@@ -44,15 +44,15 @@ title: Wins
 
 ## Microsoft-Windows-Subsystem-Linux 連到遠端server
 1. `this pc` -> `map network drive`
-    - ![alt text](/assests/images/tools/wins-linux-server-0.png)
-    - ![alt text](/assests/images/tools/wins-linux-server-1.png)
-    - ![alt text](/assests/images/tools/wins-linux-server-2.png)
+    - ![alt text](../assests/images/tools/wins-linux-server-0.png)
+    - ![alt text](../assests/images/tools/wins-linux-server-1.png)
+    - ![alt text](../assests/images/tools/wins-linux-server-2.png)
 2. in wins powershell: 
     - `wsl`
     - `sudo mkdir -p /mnt/z`
     - `sudo mount -t drvfs Z: /mnt/z`
     - `cd /mnt/z`
-    - ![alt text](/assests/images/tools/wins-linux-server-3.png)
+    - ![alt text](../assests/images/tools/wins-linux-server-3.png)
 
 - **error**
     - It looks like /mnt/z is mounted, but it’s empty when you run ls. WSL didn't properly mount Z: from Windows – A configuration issue.
@@ -91,8 +91,8 @@ title: Wins
 ## Windows Terminal 
 - split windows: `Shift + Alt + +/-`
 - split windows: Right-click on the PowerShell icon in the taskbar and select `split tab`.
-    - ![alt text](/assests/images/tools/wins-4.png)
-    - ![alt text](/assests/images/tools/wins-3.png)
+    - ![alt text](../assests/images/tools/wins-4.png)
+    - ![alt text](../assests/images/tools/wins-3.png)
 - `alt` + `shift` + `↑ / ↓ / ← / →` ：調整窗格大小
 - `alt` + `↑ / ↓ / ← / →` ：移動窗格焦點 （Move focus ）
 - Switch to Disk D: command: `D:`
@@ -105,4 +105,4 @@ title: Wins
 ### synchronize
 - `comparision criteria` choose `File size`
 - `sychronize options` choose `preview changes`
-- ![alt text](/assests/images/tools/winscp-1.png)
+- ![alt text](../assests/images/tools/winscp-1.png)
