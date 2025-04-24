@@ -6,9 +6,7 @@ title: Github Pages
 # 利用 Github Pages 免費架一個靜態網頁
 
 ## Step 0: 靜態網頁 vs. 動態網頁
-
-- 解釋靜態網頁與動態網頁的不同
-  - ![image](../assets/images/tools/static_vs_dynamic_web_page.jpg)
+![image](../assets/images/tools/static_vs_dynamic_web_page.jpg)
 
 
 ## Step 1: 設定自動同步 readme.md & index.md 腳本
@@ -264,6 +262,19 @@ plugins:
 .is-active-link {
   font-weight: bold;
   color: #1a73e8;
+}
+```
+
+### Debug: 有些網頁 Sidebar 顯示不出來而且圖片變超大
+- 現象: ![github_pages_image_size](../assets/images/tools/github_pages_image_size.jpg)
+- 原因: 沒有限制圖片寬度
+- 解法: 在 `assets/css/style.scss` 加入以下這段
+```css
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
 }
 ```
 

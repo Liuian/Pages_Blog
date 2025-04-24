@@ -2,6 +2,7 @@
 layout: default
 title: Linux
 ---
+
 # linux
 ## 指令
 ```bash

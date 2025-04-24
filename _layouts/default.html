@@ -14,15 +14,19 @@
   {% seo %} <!-- 如果有 jekyll-seo-tag -->
 </head>
 <body>
-  <div style="display: flex; max-width: 1200px; margin: 0 auto; padding: 1rem;">
+  <!-- <div style="display: flex; max-width: 1200px; margin: 0 auto; padding: 1rem;"> -->
+  <div style="display: flex; align-items: flex-start;">  
     
     <!-- TOC 導覽欄 -->
-    <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem;"></nav>
+    <!-- <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem;"></nav> -->
+    <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem; background: rgba(255,255,0,0.5);"></nav>
 
     <!-- 內容區塊 -->
-    <div class="js-toc-content" style="flex: 1;">
+    <!-- <div class="js-toc-content" style="flex: 1;"> -->
+    <main style="flex: 1;">
       {{ content }}
-    </div>
+    <!-- </div> -->
+    </main>
   </div>
 
   <!-- TOC Script -->
