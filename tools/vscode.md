@@ -59,3 +59,14 @@ title: VScode
     http://192.168.1.128:8886/ :: /home/covmo
     http://192.168.1.128:8888/ :: /data/tmp/sheldon/dem/salt/mapbox
     ```
+
+# 設定預覽模式
+在 VSCode 中，你可以設定「**點擊一次預覽、點擊兩次才固定開啟檔案**」的行為，這功能叫做 **預覽模式（Preview Mode）**。若你想要 **點一下只預覽，點兩下才固定打開**（避免每次點檔案都開太多 tab），請依照下列步驟設定：
+
+1. 打開 VSCode。
+2. 點左下角齒輪 → 選「**設定**」。
+3. 搜尋 `workbench.editor.enablePreview`
+4. 勾選 ✅「**Workbench › Editor: Enable Preview**」  
+   - 開啟後：點一下檔案是「預覽」，點兩下才「固定」這個檔案。
+   - 關閉後：每次點檔案都會新開一個 tab。
+

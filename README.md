@@ -1,6 +1,9 @@
 # Welcome to Ian's Blog
 
 ## Tools
+- Python Code
+    - [whisper_audio_to_txt](https://liuian.github.io/pages-blog/tools/python_code/whisper_audio_to_txt)
+- [excel](https://liuian.github.io/pages-blog/tools/excel)
 - [flowchart](https://liuian.github.io/pages-blog/tools/flowchart)
 - [gis_qgis_overpass](https://liuian.github.io/pages-blog/tools/gis_qgis_overpass)
 - [git](https://liuian.github.io/pages-blog/tools/git)

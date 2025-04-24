@@ -116,22 +116,90 @@ title: Home
 
 ## Step 3: 插入圖片
 ### 方法二：用 site.url 和 site.baseurl（比較通用）
-
-你可以在 `_config.yml` 裡加上：
-
-```yaml
-baseurl: "/pages-blog"
-```
-
-然後在你的 `.md` 或 HTML 裡寫：
+`.md` 或 HTML 裡寫上絕對路徑：
 
 ```liquid
 ![for loop](../assets/images/tools/flowchart-for-loop.jpeg)
 ```
 
-這樣無論你網站部署在哪個路徑（子資料夾），都會顯示正確！
+## Step 4: 進階設定
+### 1. **新增 RSS 訂閱功能**透過加入 `jekyll-feed` 插件，讓讀者能訂閱你的部落格，獲得最新文章通知
+
+**設定方法：**
+在 `_config.yml` 中加入：
+```yaml
+plugins:
+  - jekyll-feed
+```
+
+### 2. **啟用文章分類與標籤**使用 `jekyll-archives` 插件，將文章依照分類或標籤整理，方便讀者瀏覽特定主題的內容
+
+**設定方法：**
+在 `_config.yml` 中加入：
+```yaml
+plugins:
+  - jekyll-archives
+```
+
+### 3. **新增搜尋功能**導入如 [Lunr.js](https://lunrjs.com/) 的搜尋功能，讓讀者能快速找到感興趣的文章
+
+### 4. **建立「關於我」頁面**提供一個「關於我」頁面，介紹你的背景、專業領域或部落格的宗旨，增加讀者的信任感
+
+---
+
+## 📈 SEO 與社群分享優化
+
+### 5. **完善 SEO 設定*
+使用 `jekyll-seo-tag` 插件，自動生成適當的 meta 標籤，提升搜尋引擎的收錄效。
+
+**設定方法：**
+在 `_config.yml` 中加入：
+```yaml
+plugins:
+  - jekyll-seo-tag
+```
+
+並在你的佈局檔案（如 `_layouts/default.html`）的 `<head>` 區塊中加：
+```html
+{% seo %}
+```
+
+### 6. **新增網站地圖*
+透過 `jekyll-sitemap` 插件，自動生成 sitemap.xml，幫助搜尋引擎更有效地索引你的網。
+
+**設定方法：**
+在 `_config.yml` 中加入：
+```yaml
+plugins:
+  - jekyll-sitemap
+```
+
+### 7. **整合社群分享功能*
+加入社群分享按鈕，讓讀者能輕鬆分享文章至 Facebook、Twitter 等平台，擴大曝光。
+
+---
+
+## 🎨 使用者體驗與設計建議
+
+### 8. **優化行動裝置顯示*
+確保網站在手機和平板上也有良好的顯示效果。你可以使用 [Google 的行動裝置友好測試工具](https://search.google.com/test/mobile-friendly) 來檢查並化。
+
+### 9. **自訂網站風格*
+透過修改 `assets/css/style.scss`，自訂網站的配色、字體等風格，讓部落格更具個人色。
+
+---
+
+## 📊 進階功能建議
+
+### 10. **整合網站分析工**
+使用 Google Analytics 或其他分析工具，了解讀者的瀏覽行為，進一步優化內容佈局。
+
+### 11. **啟用留言功**
+透過整合 [Disqus](https://disqus.com/) 等第三方服務，讓讀者能在文章下方留言，增加動性。
+
 
 ## Note: 如果 deployment 卡住
+- 強制重新deploy
 ```bash
 git commit --amend --no-edit
 git push origin main --force
