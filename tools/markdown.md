@@ -2,4 +2,4 @@
 layout: default
 title: Markdown
 ---
-<mark>比爾蓋茲</mark>
+- 螢光筆: `<mark>比爾蓋茲</mark>` - <mark>比爾蓋茲</mark>

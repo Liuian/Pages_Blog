@@ -198,6 +198,86 @@ plugins:
 透過整合 [Disqus](https://disqus.com/) 等第三方服務，讓讀者能在文章下方留言，增加動性。
 
 
+## 加入側邊欄
+所有頁面都自動帶有 **可折疊的目錄欄（TOC）**，需要 **修改 `_layouts/default.html`**，把 TOC 整合進每一頁的主架構。
+
+---
+
+### ✅ 修改 `_layouts/default.html` 步驟
+
+這邊是一個 **簡潔、通用的 layout 結構**，可以讓 TOC 固定在左側、內容在右側，自動作用於所有頁面：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 你原本的 style & script -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- TOC CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
+
+  {% seo %} <!-- 如果有 jekyll-seo-tag -->
+</head>
+<body>
+  <div style="display: flex; max-width: 1200px; margin: 0 auto; padding: 1rem;">
+    
+    <!-- TOC 導覽欄 -->
+    <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem;"></nav>
+
+    <!-- 內容區塊 -->
+    <div class="js-toc-content" style="flex: 1;">
+      {{ content }}
+    </div>
+  </div>
+
+  <!-- TOC Script -->
+  <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>
+  <script>
+    tocbot.init({
+      tocSelector: '.js-toc',
+      contentSelector: '.js-toc-content',
+      headingSelector: 'h1, h2, h3',
+      collapseDepth: 6,
+      scrollSmooth: true,
+      orderedList: false,
+    });
+  </script>
+</body>
+</html>
+```
+
+---
+
+### ✅ 加一點 CSS（放 `assets/css/style.scss`）
+
+這樣可以讓目前閱讀區塊的目錄高亮顯示：
+
+```scss
+.is-active-link {
+  font-weight: bold;
+  color: #1a73e8;
+}
+```
+
+---
+
+### ⛳ 最後檢查一下你頁面都要有：
+
+```markdown
+---
+layout: default
+title: 任意標題
+---
+```
+
+這樣才能套用我們剛剛改的 `default.html`！
+
+
 ## Note: 如果 deployment 卡住
 - 強制重新deploy
 ```bash

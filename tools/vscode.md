@@ -4,6 +4,7 @@ title: VScode
 ---
 # short key
 - 從某一位置一次選取多行: `Alt + Shift`
+- Zen mode. Enter distraction-free Zen mode. Keyboard Shortcut: Ctrl+K Z. zen mode. Press Esc twice to exit Zen Mode.
 
 # VS Code Python Tool Does Multiple Interactive Windows
 - [VS Code Python Tool Does Multiple Interactive Windows](https://visualstudiomagazine.com/articles/2020/08/13/vs-code-python.aspx)
