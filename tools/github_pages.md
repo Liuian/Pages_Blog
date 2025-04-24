@@ -7,7 +7,9 @@ title: Github Pages
 
 ## Step 0: 靜態網頁 vs. 動態網頁
 
-![image](../assets/images/tools/static_vs_dynamic_web_page.jpg)
+- 解釋靜態網頁與動態網頁的不同
+  - ![image](../assets/images/tools/static_vs_dynamic_web_page.jpg)
+
 
 ## Step 1: 設定自動同步 readme.md & index.md 腳本
 
