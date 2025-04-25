@@ -13,6 +13,7 @@ title: Python
 
 ### Question 1
 - python 函數中的變數為何也會更改到原始變數?在以下例子中，gdf被新增了面積及面積區間欄位。
+
 ```python
 def calculate_area(geom):
     return abs(geod.geometry_area_perimeter(geom)[0])
@@ -39,6 +40,7 @@ def area_interval_gcs(gdf):
 interval_stats, gdf_update = area_interval_gcs(gdf)
 print(interval_stats)
 ```
+
 ### Answer 1
 In Python, understanding how variables handle mutable objects (like `lists`, `dicts`, and `DataFrames`) is key to understanding how changes propagate. Here’s a more in-depth explanation:
 
@@ -46,6 +48,8 @@ In Python, understanding how variables handle mutable objects (like `lists`, `di
 In Python, when you assign a variable to a mutable object (such as a `list`, `dict`, or `DataFrame`), the variable doesn't hold the actual object itself, but rather a **reference** to the object. This means that multiple variables can reference the same object in memory.
 
 ##### Example:
+
+
 ```python
 a = [1, 2, 3]  # List is mutable
 b = a  # b now references the same list object as a
@@ -54,6 +58,8 @@ b.append(4)  # Modify the list through b
 
 print(a)  # Output: [1, 2, 3, 4]
 ```
+
+
 In this example, modifying `b` also modifies `a` because they both refer to the **same list in memory**.
 
 #### 2. **Mutable vs. Immutable Objects**
