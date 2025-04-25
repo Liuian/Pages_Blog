@@ -465,37 +465,7 @@ p code, li code {
 ```
 
 ### 5.6 程式碼高亮
-沒錯 ✅！只要你新增這個 `_config.yml` 並包含以下設定，就可以讓你的 markdown 程式碼區塊依據語言高亮顯示：
-
-```yaml
-title: 我的部落格
-description: 記錄程式、閱讀與生活
-baseurl: "" # 若為自訂網域或 GitHub Pages 根目錄可留空
-url: "https://yourname.github.io"
-
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
-
-theme: minima  # 或是你實際使用的佈景主題
-```
-
----
-
-## ✅ 小提醒
-
-1. 你寫的 `.md` 檔案裡的 code block 要標語言，例如：
-
-<pre>
-```python
-print("hello world")
-```
-</pre>
-
-2. 把 `_config.yml` 加入 Git 並 push 到 GitHub Pages repo
-3. 等待 GitHub Pages 自動重建（有時幾秒～幾分鐘）
-4. 語法高亮就會自動套用！🎉
-
+TODO
 
 ### 5.5 TOC 客製化自動捲動方式　
 TODO
