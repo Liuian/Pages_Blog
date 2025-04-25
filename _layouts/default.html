@@ -5,24 +5,68 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- 你原本的 style & script -->
+  <!-- Jekyll 的 CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
   <!-- TOC CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
 
-  {% seo %} <!-- 如果有 jekyll-seo-tag -->
+  {% seo %} <!-- jekyll-seo-tag plugin -->
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .sidebar {
+      width: 250px;
+      position: sticky;
+      top: 1rem;
+      align-self: flex-start;
+      background: #ffffcc; /* 淡黃色背景 */
+      border: 1px solid red;
+      padding: 1rem;
+      margin-right: 2rem;
+      height: max-content;
+    }
+
+    .content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        position: relative;
+        top: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div style="display: flex; max-width: 1200px; margin: 0 auto; padding: 1rem;">
-    
+  <div class="container">
     <!-- TOC 導覽欄 -->
-    <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem;"></nav>
+    <nav class="sidebar js-toc"></nav>
 
     <!-- 內容區塊 -->
-    <div class="js-toc-content" style="flex: 1;">
+    <main class="content js-toc-content">
       {{ content }}
-    </div>
+    </main>
   </div>
 
   <!-- TOC Script -->
