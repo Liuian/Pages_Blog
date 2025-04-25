@@ -1,0 +1,10 @@
+title: 我的部落格
+description: 記錄程式、閱讀與生活
+baseurl: "/pages-blog"       # 一定要加這個子路徑（repo 名稱）
+url: "https://liuian.github.io"  # GitHub 的主網域
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+theme: minima

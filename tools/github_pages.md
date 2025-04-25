@@ -464,21 +464,41 @@ p code, li code {
 }
 ```
 
-### 5.5 TOC 客製化自動捲動方式　
-TODO
+### 5.6 程式碼高亮
+沒錯 ✅！只要你新增這個 `_config.yml` 並包含以下設定，就可以讓你的 markdown 程式碼區塊依據語言高亮顯示：
 
+```yaml
+title: 我的部落格
+description: 記錄程式、閱讀與生活
+baseurl: "" # 若為自訂網域或 GitHub Pages 根目錄可留空
+url: "https://yourname.github.io"
 
-#### 🧠 工作原理簡述：
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
 
-- 監控 `.js-toc` 中 `.is-active-link`（目前章節連結）是否被更新。
-- 若更新後它已「超出可見區域」，則自動捲動。
-- 捲動時會讓它**對齊在 TOC 底部附近**，符合你的需求。
+theme: minima  # 或是你實際使用的佈景主題
+```
 
 ---
 
-這段程式碼跟 tocbot 本身完全兼容，沒有改動原本的行為，只是在需要時捲動，效果會非常像 VS Code 的 TOC 體驗。
+## ✅ 小提醒
 
-要不要我再幫你加上「點擊 TOC 時自動收合」或「按鈕記憶上次展開狀態」之類的 UX 增強？
+1. 你寫的 `.md` 檔案裡的 code block 要標語言，例如：
+
+<pre>
+```python
+print("hello world")
+```
+</pre>
+
+2. 把 `_config.yml` 加入 Git 並 push 到 GitHub Pages repo
+3. 等待 GitHub Pages 自動重建（有時幾秒～幾分鐘）
+4. 語法高亮就會自動套用！🎉
+
+
+### 5.5 TOC 客製化自動捲動方式　
+TODO
 
 ## Note - debug 
 ### 如果 deployment 卡住
