@@ -27,8 +27,8 @@ body {
   position: sticky;
   top: 1rem;
   align-self: flex-start;
-  background: #ffffcc; /* 淡黃色背景 */
-  border: 1px solid red;
+  background: transparent; 
+  border: 1px solid transparent;
   padding: 1rem;
   margin-right: 2rem;
   height: max-content;

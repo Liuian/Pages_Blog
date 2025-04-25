@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Jekyll 的 CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+        <!-- Jekyll 的 CSS -->
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-  <!-- TOC CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
+        <!-- TOC CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
 
-  {% seo %} <!-- jekyll-seo-tag plugin -->
+        {% seo %} <!-- jekyll-seo-tag plugin -->
 
-</head>
-<body>
-  <div class="container">
-    <!-- TOC 導覽欄 -->
-    <nav class="sidebar js-toc"></nav>
+    </head>
+    <body>
+        <div class="container">
+            <!-- TOC 導覽欄 -->
+            <nav class="sidebar js-toc"></nav>
 
-    <!-- 內容區塊 -->
-    <main class="content js-toc-content">
-      {{ content }}
-    </main>
-  </div>
+            <!-- 內容區塊 -->
+            <main class="content js-toc-content">
+            {{ content }}
+            </main>
+        </div>
 
-  <!-- TOC Script -->
-  <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>
-  <script>
-    tocbot.init({
-      tocSelector: '.js-toc',
-      contentSelector: '.js-toc-content',
-      headingSelector: 'h1, h2, h3, h4, h5, h6',
-      collapseDepth: 6,
-      scrollSmooth: true,
-      orderedList: false,
-    });
-  </script>
-</body>
+        <!-- TOC Script -->
+        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>
+        <script>
+            tocbot.init({
+            tocSelector: '.js-toc',
+            contentSelector: '.js-toc-content',
+            headingSelector: 'h1, h2, h3, h4, h5, h6',
+            collapseDepth: 6,
+            scrollSmooth: true,
+            orderedList: false,
+            });
+        </script>
+    </body>
 </html>
