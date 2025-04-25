@@ -39,6 +39,11 @@ body {
   min-width: 0;
 }
 
+.toc-inner {
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
