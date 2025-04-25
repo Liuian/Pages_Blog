@@ -179,6 +179,7 @@ By keeping these behaviors in mind, you can control how your functions interact 
 ### Question 2
 - why the last line `gdf_update = gdf_update[gdf_update['area_m2'] >= 100]` only change gdf_update but not gdf since you mentioned:
 - In Python, when you assign a variable to a mutable object (such as a list, dict, or DataFrame), the variable doesn't hold the actual object itself, but rather a reference to the object.
+
 ```python
 def calculate_area(geom):
     return abs(geod.geometry_area_perimeter(geom)[0])
@@ -208,6 +209,7 @@ print(interval_stats)
 
 gdf_update = gdf_update[gdf_update['area_m2'] >= 100]
 ```
+
 ### Answer 2
 Great question! Let's dive into why this line only changes `gdf_update` and not the original `gdf`:
 
