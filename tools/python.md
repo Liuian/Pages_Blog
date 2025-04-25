@@ -2,7 +2,7 @@
 layout: default
 title: Python
 ---
-
+<!-- 
 # Table of Contents
 - [Fiona](#fiona)
 - [Python](#python)
@@ -14,7 +14,7 @@ title: Python
   - [Steps to set up a system for processing multiple GeoJSON files using two separate Python files](#steps-to-set-up-a-system-for-processing-multiple-geojson-files-using-two-separate-python-files)
 - [Shapely](#shapely)
   - [geometry.coords](#geometrycoords)
-  - [geometry.geoms](#geometrygeoms)
+  - [geometry.geoms](#geometrygeoms) -->
 
 # Fiona
 - Deal with large size geo files
