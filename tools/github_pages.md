@@ -409,7 +409,60 @@ p code, li code {
 }
 ```
 ### 5.5 處理手機板TOC排版
+- For example:
+![image](../assets/images/tools/github_pages_5-5.jpg)
 
+- 將style.css `@media` 部分改為
+```css
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .sidebar-wrapper {
+        width: 100%;
+        margin-right: 0;
+        position: relative;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-height: 60vh;
+        overflow-y: auto;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+        padding: 1rem;
+        z-index: 1;
+    }
+
+    .sidebar.collapsed {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    #toggle-sidebar {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 2;
+        background: #f9f9f9;
+        font-weight: bold;
+    }
+
+    .content {
+        z-index: 0;
+        position: relative;
+    }
+}
+```
 
 ### 5.5 TOC 客製化自動捲動方式　
 TODO
