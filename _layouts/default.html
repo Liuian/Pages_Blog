@@ -16,7 +16,12 @@
     <body>
         <div class="container">
             <!-- TOC 導覽欄 -->
-            <nav class="sidebar js-toc"></nav>
+            <!-- <nav class="sidebar js-toc"></nav> -->
+            <!-- TOC 導覽欄容器 -->
+            <div class="sidebar-wrapper">
+                <button id="toggle-sidebar">☰ Table of Contents</button>
+                <nav class="sidebar js-toc"></nav>
+            </div>
 
             <!-- 內容區塊 -->
             <main class="content js-toc-content">
@@ -35,7 +40,13 @@
             collapseDepth: 6,
             scrollSmooth: true,
             orderedList: false,
-            });
+        });
+
+        // 切換側邊欄顯示 / 隱藏
+        document.getElementById('toggle-sidebar').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.toggle('collapsed');
+        });
+        
         </script>
     </body>
 </html>

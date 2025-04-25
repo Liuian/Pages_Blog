@@ -269,20 +269,6 @@ plugins:
 }
 ```
 
-#### Debug: 有些網頁 Sidebar 顯示不出來而且圖片變超大
-- 現象: ![github_pages_image_size](../assets/images/tools/github_pages_image_size.jpg)
-- 原因: 沒有限制圖片寬度
-- 解法: 在 `assets/css/style.scss` 加入以下這段
-```css
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-}
-```
-
----
 
 #### ⛳ 最後檢查一下你頁面都要有：
 
@@ -295,7 +281,22 @@ title: 任意標題
 
 這樣才能套用我們剛剛改的 `default.html`！
 
-### 5.2 加入區塊馬程式方框
+### 5.2 解決插入sidebar後圖片變超大
+- 現象: ![github_pages_image_size](../assets/images/tools/github_pages_image_size.jpg)
+- 原因: 沒有限制圖片寬度
+- 解法: 在 `assets/css/style.scss` 加入以下這段
+
+```css
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+```
+
+### 5.3 加入區塊程式碼方框(markdown)
+
 ```css
 /* Style for code blocks (surrounded by triple backticks ```) */
 pre {
@@ -324,11 +325,59 @@ p code, li code {
   font-size: 0.9em;
 }
 ```
+### 5.4 使的側邊欄可收合
+要讓你的 **TOC 側邊欄可收合（可展開 / 收起）**，我們可以加上一些簡單的 JavaScript 搭配 CSS 切換 class，以下是完整解法：
+
+---
+
+#### ✅ 修改後的內容包括：
+
+1. 為側邊欄加上 **切換按鈕**  
+2. 增加 **`.collapsed` class 的 CSS 控制樣式**  
+3. 加入 JavaScript 處理「收合 / 展開」行為
+
+---
+
+#### 🔧 **修改 `default.html`**
+
+在 `<nav class="sidebar js-toc">` 外面包一個容器，加上一個按鈕：
+
+```html
+<!-- TOC 導覽欄容器 -->
+<div class="sidebar-wrapper">
+  <button id="toggle-sidebar">☰ Table of Contents</button>
+  <nav class="sidebar js-toc"></nav>
+</div>
+```
+
+然後在 `<script>` 區域 **最下面加入這段 JavaScript**：
+
+```html
+<script>
+  // 初始化 TOCBOT
+  tocbot.init({
+    tocSelector: '.js-toc',
+    contentSelector: '.js-toc-content',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    collapseDepth: 6,
+    scrollSmooth: true,
+    orderedList: false,
+  });
+
+  // 切換側邊欄顯示 / 隱藏
+  document.getElementById('toggle-sidebar').addEventListener('click', function () {
+    document.querySelector('.sidebar').classList.toggle('collapsed');
+  });
+</script>
+```
 
 
-## Note: 
+#### 🎨 **修改 `style.css`**
+
+## Note - debug 
 ### 如果 deployment 卡住
 - 強制重新deploy
+
 ```bash
 git commit --amend --no-edit
 git push origin main --force
