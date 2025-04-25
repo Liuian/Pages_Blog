@@ -457,6 +457,11 @@ p code, li code {
 </script>
 ```
 
+```css
+    max-height: 80vh; /* 根據需要調整高度 */
+    overflow-y: auto;
+    transition: transform 0.3s ease; /* 側邊欄切換效果 */
+```
 ---
 
 #### 🧠 工作原理簡述：
