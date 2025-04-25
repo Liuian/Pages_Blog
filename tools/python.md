@@ -2,27 +2,15 @@
 layout: default
 title: Python
 ---
-<!-- 
-# Table of Contents
-- [Fiona](#fiona)
-- [Python](#python)
-  - [How variables handle mutable objects (like `lists`, `dicts`, and `DataFrames`) in Python](#how-variables-handle-mutable-objects-like-lists-dicts-and-dataframes-in-python)
-    - [Question 1](#question-1)
-    - [Answer 1](#answer-1)
-    - [Question 2](#question-2)
-    - [Answer 2](#answer-2)
-  - [Steps to set up a system for processing multiple GeoJSON files using two separate Python files](#steps-to-set-up-a-system-for-processing-multiple-geojson-files-using-two-separate-python-files)
-- [Shapely](#shapely)
-  - [geometry.coords](#geometrycoords)
-  - [geometry.geoms](#geometrygeoms) -->
-
 # Fiona
 - Deal with large size geo files
 - Fiona streams simple feature data to and from GIS formats like GeoPackage and Shapefile.
 - [Fiona website](https://fiona.readthedocs.io/en/stable/README.html)
 
 # python
+
 ## How variables handle mutable objects (like `lists`, `dicts`, and `DataFrames`) in Python
+
 ### Question 1
 - python 函數中的變數為何也會更改到原始變數?在以下例子中，gdf被新增了面積及面積區間欄位。
 ```python
@@ -330,6 +318,7 @@ for file_name in os.listdir(input_dir):
 By organizing your code in this way, you can maintain a clean separation of concerns while making it easy to process multiple files efficiently.
 
 # shpaely
+
 ## geometry.coords
 The `geometry.coords` attribute provides direct access to the coordinate sequence of a Shapely geometry, such as a `LineString` or `Point`. It returns the actual points (as a list of `(x, y)` tuples) that define the geometry's shape.
 
@@ -340,6 +329,7 @@ For example:
 - **`MultiPolygon`**: Each polygon within a `MultiPolygon` must be accessed individually, as it doesn’t directly support `coords`. You’d use `.geoms` to get each individual polygon, and then use `polygon.exterior.coords` on each of them.
 
 In short, `geometry.coords` is used to get all points for simpler geometries, but for polygons, it’s often necessary to use `exterior.coords` or work with each part individually in multi-part geometries.
+
 ## geometry.geoms
 - In Shapely, a MultiPolygon is accessed via its `.geoms` attribute, which provides an iterable of the individual Polygon components. 
 - `geometry` -> `goemetry.geoms`
