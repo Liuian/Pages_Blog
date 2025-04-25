@@ -34,11 +34,6 @@ body {
   height: max-content;
 }
 
-.toc-inner {
-    max-height: calc(100vh - 2rem); /* 跟 sidebar 的 top: 1rem 搭配 */
-    overflow-y: auto;
-}
-
 .content {
   flex: 1;
   min-width: 0;
