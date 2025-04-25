@@ -374,6 +374,40 @@ p code, li code {
 
 #### 🎨 **修改 `style.css`**
 
+```css
+/* 包住 sidebar 與切換按鈕的外框 */
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    position: sticky;
+    top: 1rem;
+    align-self: flex-start;
+}
+
+/* 收合狀態下隱藏 TOC */
+.sidebar.collapsed {
+    display: none;
+}
+
+/* TOC 切換按鈕 */
+#toggle-sidebar {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #toggle-sidebar {
+    width: 100%;
+    }
+}
+```
 ## Note - debug 
 ### 如果 deployment 卡住
 - 強制重新deploy
