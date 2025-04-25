@@ -42,10 +42,6 @@ body {
     padding: 1rem;
     margin-right: 2rem;
     height: max-content;
-    /* add */
-    max-height: 80vh; /* 根據需要調整高度 */
-    overflow-y: auto;
-    transition: transform 0.3s ease; /* 側邊欄切換效果 */
 }
 
 /* 收合狀態下隱藏 TOC */
