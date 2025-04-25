@@ -408,6 +408,69 @@ p code, li code {
     }
 }
 ```
+
+### 5.5 TOC 客製化自動捲動方式
+你希望的是這樣的 TOC 行為：
+
+> ✅ **TOC 不自動捲動**，直到使用者滑到 **對應標題無法在 TOC 視窗中看到** 時，TOC 才**自動捲動該標題對齊到底部**。
+
+這個需求比一般 tocbot 的「active link scroll」複雜一點，我們需要客製化 **tocbot 的滾動行為**。以下是完整的解法（只要加入一段 JS）：
+
+---
+
+#### ✅ 替代 `tocbot.init` 下方的 JS，加上智能 TOC 滾動
+
+```html
+<script>
+  tocbot.init({
+    tocSelector: '.js-toc',
+    contentSelector: '.js-toc-content',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    collapseDepth: 6,
+    scrollSmooth: true,
+    orderedList: false,
+  });
+
+  // Toggle TOC button
+  document.getElementById('toggle-sidebar').addEventListener('click', function () {
+    document.querySelector('.sidebar').classList.toggle('collapsed');
+  });
+
+  // Smart TOC scroll: only scroll when the active item is out of view
+  const toc = document.querySelector('.js-toc');
+  const observer = new MutationObserver(() => {
+    const activeLink = toc.querySelector('.is-active-link');
+    if (!activeLink) return;
+
+    const tocRect = toc.getBoundingClientRect();
+    const linkRect = activeLink.getBoundingClientRect();
+
+    // 如果 active link 超出 TOC 容器視窗才自動捲動
+    if (linkRect.top < tocRect.top || linkRect.bottom > tocRect.bottom) {
+      // 捲動使 active link 出現在 TOC 底部
+      const offset = activeLink.offsetTop - toc.clientHeight + activeLink.offsetHeight + 10;
+      toc.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  });
+
+  observer.observe(toc, { attributes: true, childList: true, subtree: true });
+</script>
+```
+
+---
+
+#### 🧠 工作原理簡述：
+
+- 監控 `.js-toc` 中 `.is-active-link`（目前章節連結）是否被更新。
+- 若更新後它已「超出可見區域」，則自動捲動。
+- 捲動時會讓它**對齊在 TOC 底部附近**，符合你的需求。
+
+---
+
+這段程式碼跟 tocbot 本身完全兼容，沒有改動原本的行為，只是在需要時捲動，效果會非常像 VS Code 的 TOC 體驗。
+
+要不要我再幫你加上「點擊 TOC 時自動收合」或「按鈕記憶上次展開狀態」之類的 UX 增強？
+
 ## Note - debug 
 ### 如果 deployment 卡住
 - 強制重新deploy

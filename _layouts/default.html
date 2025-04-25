@@ -47,6 +47,39 @@
             document.querySelector('.sidebar').classList.toggle('collapsed');
         });
 
+        // TOC
+        tocbot.init({
+            tocSelector: '.js-toc',
+            contentSelector: '.js-toc-content',
+            headingSelector: 'h1, h2, h3, h4, h5, h6',
+            collapseDepth: 6,
+            scrollSmooth: true,
+            orderedList: false,
+        });
+
+        // TOC - Toggle TOC button
+        document.getElementById('toggle-sidebar').addEventListener('click', function () {
+            document.querySelector('.sidebar').classList.toggle('collapsed');
+        });
+
+        // TOC - Smart TOC scroll: only scroll when the active item is out of view
+        const toc = document.querySelector('.js-toc');
+        const observer = new MutationObserver(() => {
+            const activeLink = toc.querySelector('.is-active-link');
+            if (!activeLink) return;
+
+            const tocRect = toc.getBoundingClientRect();
+            const linkRect = activeLink.getBoundingClientRect();
+
+            // 如果 active link 超出 TOC 容器視窗才自動捲動
+            if (linkRect.top < tocRect.top || linkRect.bottom > tocRect.bottom) {
+            // 捲動使 active link 出現在 TOC 底部
+            const offset = activeLink.offsetTop - toc.clientHeight + activeLink.offsetHeight + 10;
+            toc.scrollTo({ top: offset, behavior: 'smooth' });
+            }
+        });
+
+        observer.observe(toc, { attributes: true, childList: true, subtree: true });
         </script>
     </body>
 </html>
