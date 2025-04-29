@@ -1,18 +1,3 @@
-// tocbot.init({
-//     tocSelector: '.js-toc',
-//     contentSelector: '.js-toc-content',
-//     headingSelector: 'h1, h2, h3, h4, h5, h6',
-//     collapseDepth: 6,
-//     scrollSmooth: true,
-//     orderedList: false,
-// });
-
-// // 切換側邊欄顯示 / 隱藏
-// document.getElementById('toggle-sidebar').addEventListener('click', function () {
-//     document.querySelector('.sidebar').classList.toggle('collapsed');
-// });
-
-
 document.addEventListener("DOMContentLoaded", function () {
     // 初始化 tocbot
     tocbot.init({
@@ -46,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Back to home 功能
     const backHomeLink = document.createElement("a");
     backHomeLink.textContent = "← Home";
-    backHomeLink.href = "/";
+    backHomeLink.href = "https://liuian.github.io/pages-blog/";
     backHomeLink.className = "back-home-link";
     document.body.appendChild(backHomeLink);
 
