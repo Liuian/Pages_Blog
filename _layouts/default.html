@@ -5,11 +5,9 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Jekyll 的 CSS -->
-        <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-        <!-- TOC CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
+        <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> <!-- Jekyll 的 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">   <!-- TOC CSS -->
+        <link rel="stylesheet" href="{{ '/assets/css/rouge.css' | relative_url }}"> <!--  Rouge CSS - highlight code-->
 
         {% seo %} <!-- jekyll-seo-tag plugin -->
     </head>
@@ -29,23 +27,8 @@
             </main>
         </div>
 
-        <!-- TOC Script -->
-        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>
-        
-        <script>
-            tocbot.init({
-            tocSelector: '.js-toc',
-            contentSelector: '.js-toc-content',
-            headingSelector: 'h1, h2, h3, h4, h5, h6',
-            collapseDepth: 6,
-            scrollSmooth: true,
-            orderedList: false,
-        });
+        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>   <!-- TOC Script -->
+        <script src="{{ '/assets/js/main.js' | relative_url }}"></script>   <!-- custom script -->
 
-        // 切換側邊欄顯示 / 隱藏
-        document.getElementById('toggle-sidebar').addEventListener('click', function () {
-            document.querySelector('.sidebar').classList.toggle('collapsed');
-        });
-        </script>
     </body>
 </html>
