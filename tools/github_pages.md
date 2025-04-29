@@ -14,12 +14,14 @@ title: Github Pages
 這種方式可以 **讓你只維護 `README.md`**，然後在每次 Git commit 前，自動產生對應的 `index.md` 作為 GitHub Pages 的首頁，非常適合開發者使用的 workflow 🚀
 
 ---
+
 ### ✅ 最終效果
 每次你 `git commit` 前，Git 會：
 
 1. 讀取 `README.md`
 2. 在前面加上 Jekyll 的 front matter
 3. 輸出成 `index.md` 給 GitHub Pages 使用
+
 ---
 
 ### 🔧 教學步驟：建立 Git pre-commit hook
@@ -465,7 +467,13 @@ p code, li code {
 ```
 
 ### 5.6 程式碼高亮
-TODO
+1. 新增 `assets/rouge.css`
+2. 貼上 https://raw.githubusercontent.com/jwarby/jekyll-pygments-themes/master/github.css 內容
+3. 加入到 `_layouts/default.html` <body> 部分
+
+```html
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>   <!-- custom script -->
+```
 
 ### 5.5 TOC 客製化自動捲動方式　
 TODO
