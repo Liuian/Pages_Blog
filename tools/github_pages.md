@@ -475,6 +475,91 @@ p code, li code {
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>   <!-- custom script -->
 ```
 
+### 5.7 加入 back to home & jump to top
+1. `style.css`加入
+
+```css
+/* Back to home 連結 */
+.back-home-link {
+    position: fixed;
+    bottom: 2rem;
+    left: 1.5rem;
+    background: #f0f0f0;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 999;
+    font-size: 0.9rem;
+}
+
+
+/* TOC 切換按鈕 */
+#toggle-sidebar {
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+}
+```
+
+2. `main.js` 改為
+
+```js
+document.addEventListener("DOMContentLoaded", function () {
+    // 初始化 tocbot
+    tocbot.init({
+        tocSelector: '.js-toc',
+        contentSelector: '.js-toc-content',
+        headingSelector: 'h1, h2, h3, h4, h5, h6',
+        hasInnerContainers: true,
+        collapseDepth: 6,
+        scrollSmooth: true,
+        orderedList: false,
+    });
+
+    // 切換 TOC 側邊欄顯示
+    const toggleButton = document.getElementById("toggle-sidebar");
+    const sidebar = document.querySelector(".sidebar");
+
+    toggleButton.addEventListener("click", function () {
+        sidebar.classList.toggle("collapsed");
+    });
+
+    // Jump to top 功能
+    const toTopBtn = document.createElement("button");
+    toTopBtn.textContent = "↑ Top";
+    toTopBtn.className = "jump-top-btn";
+    document.body.appendChild(toTopBtn);
+
+    toTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Back to home 功能
+    const backHomeLink = document.createElement("a");
+    backHomeLink.textContent = "← Home";
+    backHomeLink.href = "https://liuian.github.io/pages-blog/";
+    backHomeLink.className = "back-home-link";
+    document.body.appendChild(backHomeLink);
+
+    // 捲動到一定高度後顯示「Top」按鈕
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            toTopBtn.style.display = "block";
+        } else {
+            toTopBtn.style.display = "none";
+        }
+    });
+});
+```
+
+
 ### 5.5 TOC 客製化自動捲動方式　
 TODO
 
