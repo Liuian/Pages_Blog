@@ -18,7 +18,7 @@ body {
 }
 
 main.content {
-    padding-top: 4.5rem;  /* 對應 navbar 的高度 */
+    padding-top: 1rem;  /* 對應 navbar 的高度 */
 }
 
 .navbar {
