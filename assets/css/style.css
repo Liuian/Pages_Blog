@@ -22,28 +22,23 @@ main.content {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 0.5rem 1.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Segoe UI", sans-serif;
-    z-index: 1000;
+    justify-content: center;  /* 中置連結群 */
+    flex-wrap: wrap;          /* 可自動換行 */
 }
 
-.navbar a {
-    margin: 0 1rem;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.navbar a:hover {
+.nav-links a {
+    margin: 0 0.5rem;
+    white-space: nowrap; /* 防止換行 */
+}
+
+.nav-links a:hover {
     color: #007acc;
 }
 
@@ -98,7 +93,7 @@ main.content {
     font-size: 0.9rem;
 }
 
-.back-home-link {
+/* .back-home-link {
     position: fixed;
     top: 1rem;
     left: 1rem;
@@ -110,7 +105,7 @@ main.content {
     border-radius: 4px;
     z-index: 999;
     font-size: 0.9rem;
-}
+} */
 
 
 /* TOC 切換按鈕 */
