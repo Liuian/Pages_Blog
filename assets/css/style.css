@@ -92,8 +92,8 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     text-decoration: none;           /* 移除底線 */
     color: white;                    /* 連結字體顏色 */
     background-color: #1a73e8;       /* 背景色（可自定） */
-    padding: 0.25rem 0.5rem;            /* 內距讓按鈕更有空間 */
-    border-radius: 5px;              /* 圓角 */
+    padding: 0.1rem 0.2rem;        /* 內距讓按鈕更有空間 */
+    border-radius: 4px;              /* 圓角 */
     margin-right: 0.5rem;            /* 連結之間的間距 */
     transition: background-color 0.3s;
 }
