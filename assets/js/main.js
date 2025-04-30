@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Back to home 功能（只有在不是首頁時顯示）
     if (window.location.pathname !== "/pages-blog/" && window.location.pathname !== "/pages-blog/index.html") {
         const backHomeLink = document.createElement("a");
-        backHomeLink.textContent = "← Home";
+        backHomeLink.textContent = "← 🏠︎ ";
         backHomeLink.href = "https://liuian.github.io/pages-blog/";
         backHomeLink.className = "back-home-link";
         document.body.appendChild(backHomeLink);
