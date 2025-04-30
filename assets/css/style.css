@@ -16,6 +16,28 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    color: #1a73e8;
+  }
+  
+
 .container {
   display: flex;
   max-width: 1200px;

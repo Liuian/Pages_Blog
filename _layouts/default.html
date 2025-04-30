@@ -12,23 +12,27 @@
         {% seo %} <!-- jekyll-seo-tag plugin -->
     </head>
     <body>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/tools/">Tools</a>
+            <a href="/notes/">Notes</a>
+            <a href="/blog/">Blog</a>
+            <a href="/about/">About</a>
+        </nav>
+          
         <div class="container">
-
             <!-- TOC 導覽欄容器 -->
             <div class="sidebar-wrapper">
                 <button id="toggle-sidebar"> ☰ </button>
                 <nav class="sidebar js-toc"></nav>
             </div>
-
             <!-- 內容區塊 -->
             <main class="content js-toc-content">
             {{ content }}
             </main>
-
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>   <!-- TOC Script -->
         <script src="{{ '/assets/js/main.js' | relative_url }}"></script>   <!-- custom script -->
-
     </body>
 </html>
