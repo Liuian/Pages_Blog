@@ -205,52 +205,59 @@ plugins:
 ### 5.1 加入側邊欄
 所有頁面都自動帶有 **可折疊的目錄欄（TOC）**，需要 **修改 `_layouts/default.html`**，把 TOC 整合進每一頁的主架構。
 
----
-#### ✅ 修改 `_layouts/default.html` 步驟
+#### 5.1.0 最終資料夾結構
+```txt
+IanBlog/
+├── _layouts/
+│   └── default.html               ← 加入 TOC 結構的主模板
+├── assets/
+│   ├── css/
+│   │   └── style.scss            ← 高亮 TOC 的 CSS
+│   └── js/
+│       └── main.js               ← tocbot 的初始化腳本
+│
+├── index.md                      ← 首頁（含目錄導引）
+├── README.md                     ← GitHub repo 說明（可選）
+│
+├── {文章資料夾1}/
+│   └── {文章1}.md
+├── {文章資料夾2}/
+│   ├── {文章2}.md
+└── {文章資料夾3}/
+    └── {文章3}.md
+```
+
+#### 5.1.1 新增 `_layouts/default.html`
 
 這邊是一個 **簡潔、通用的 layout 結構**，可以讓 TOC 固定在左側、內容在右側，自動作用於所有頁面：
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- 你原本的 style & script -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
 
-  <!-- TOC CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.css">
+    {% seo %} <!-- 如果有 jekyll-seo-tag -->
+  </head>
+  <body>
+    <div style="display: flex; max-width: 1200px; margin: 0 auto; padding: 1rem;">
+      
+      <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem;"></nav>
 
-  {% seo %} <!-- 如果有 jekyll-seo-tag -->
-</head>
-<body>
-  <div style="display: flex; max-width: 1200px; margin: 0 auto; padding: 1rem;">
-    
-    <!-- TOC 導覽欄 -->
-    <nav class="js-toc" style="width: 250px; margin-right: 2rem; position: sticky; top: 1rem;"></nav>
-
-    <!-- 內容區塊 -->
-    <div class="js-toc-content" style="flex: 1;">
-      {{ content }}
+      <div class="js-toc-content" style="flex: 1;">
+        {{ content }}
+      </div>
     </div>
-  </div>
 
-  <!-- TOC Script -->
-  <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>
-  <script>
-    tocbot.init({
-      tocSelector: '.js-toc',
-      contentSelector: '.js-toc-content',
-      headingSelector: 'h1, h2, h3',
-      collapseDepth: 6,
-      scrollSmooth: true,
-      orderedList: false,
-    });
-  </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script> <!-- TOC Script -->
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>   <!-- custom script -->
+
+  </body>
 </html>
 ```
 
@@ -258,9 +265,7 @@ plugins:
 - `<head>`: 用來定義網頁的元數據，設置頁面標題、字符編碼、樣式、SEO 信息等，這些對頁面本身不可見，但對頁面的加載和優化非常重要。
 - `<body>`: 包含頁面的實際內容，這些內容會顯示在用戶的瀏覽器中。它包括頁面文本、圖片、導航欄、主內容等。
 
----
-
-#### ✅ 加一點 CSS（放 `assets/css/style.scss`）
+#### 5.1.2 新增 `assets/css/style.scss`
 
 這樣可以讓目前閱讀區塊的目錄高亮顯示：
 
@@ -271,14 +276,27 @@ plugins:
 }
 ```
 
+#### 5.1.3 新增 `assets/js/main.js`
+```js
+tocbot.init({
+  tocSelector: '.js-toc',
+  contentSelector: '.js-toc-content',
+  headingSelector: 'h1, h2, h3, h4, h5, h6',
+  collapseDepth: 6,
+  scrollSmooth: true,
+  orderedList: false,
+});
+```
 
-#### ⛳ 最後檢查一下你頁面都要有：
+#### 5.1.4 最後檢查一下每個 `.md` 頁面都要有：
 
 ```markdown
+
 ---
 layout: default
 title: 任意標題
 ---
+
 ```
 
 這樣才能套用我們剛剛改的 `default.html`！
@@ -327,10 +345,9 @@ p code, li code {
   font-size: 0.9em;
 }
 ```
+
 ### 5.4 使的側邊欄可收合
 要讓你的 **TOC 側邊欄可收合（可展開 / 收起）**，我們可以加上一些簡單的 JavaScript 搭配 CSS 切換 class，以下是完整解法：
-
----
 
 #### ✅ 修改後的內容包括：
 
@@ -340,7 +357,7 @@ p code, li code {
 
 ---
 
-#### 🔧 **修改 `default.html`**
+#### 5.4.1 **修改 `default.html`**
 
 在 `<nav class="sidebar js-toc">` 外面包一個容器，加上一個按鈕：
 
@@ -352,7 +369,7 @@ p code, li code {
 </div>
 ```
 
-然後在 `<script>` 區域 **最下面加入這段 JavaScript**：
+`main.js` 改為：
 
 ```html
 <script>
@@ -410,6 +427,7 @@ p code, li code {
     }
 }
 ```
+
 ### 5.5 處理手機板TOC排版
 - For example:
 ![image](../assets/images/tools/github_pages_5-5.jpg)
@@ -541,13 +559,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Back to home 功能
-    const backHomeLink = document.createElement("a");
-    backHomeLink.textContent = "← Home";
-    backHomeLink.href = "https://liuian.github.io/pages-blog/";
-    backHomeLink.className = "back-home-link";
-    document.body.appendChild(backHomeLink);
-
+    // Back to home 功能（只有在不是首頁時顯示）
+    if (window.location.pathname !== "/pages-blog/" && window.location.pathname !== "/pages-blog/index.html") {
+        const backHomeLink = document.createElement("a");
+        backHomeLink.textContent = "← Home";
+        backHomeLink.href = "https://liuian.github.io/pages-blog/";
+        backHomeLink.className = "back-home-link";
+        document.body.appendChild(backHomeLink);
+    }
     // 捲動到一定高度後顯示「Top」按鈕
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
@@ -560,7 +579,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ```
 
 
-### 5.5 TOC 客製化自動捲動方式　
+### 5.8 TOC 客製化自動捲動方式　
 TODO
 
 ## Note - debug 
