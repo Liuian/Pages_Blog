@@ -18,7 +18,7 @@ body {
 }
 
 main.content {
-    padding-top: 1rem;  /* 對應 navbar 的高度 */
+    padding-top: 0rem;  /* 內容向下推 */
 }
 
 .navbar {
