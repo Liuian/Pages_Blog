@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // 切換 TOC 側邊欄顯示
     const toggleButton = document.getElementById("toggle-sidebar");
     const sidebar = document.querySelector(".sidebar");
-
     toggleButton.addEventListener("click", function () {
         sidebar.classList.toggle("collapsed");
     });
@@ -23,17 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     toTopBtn.textContent = "↑ Top";
     toTopBtn.className = "jump-top-btn";
     document.body.appendChild(toTopBtn);
-
     toTopBtn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
     // 捲動到一定高度後顯示「Top」按鈕
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            toTopBtn.style.display = "block";
-        } else {
-            toTopBtn.style.display = "none";
-        }
+        if (window.scrollY > 300) {toTopBtn.style.display = "block";} 
+        else {toTopBtn.style.display = "none";}
     });
 });

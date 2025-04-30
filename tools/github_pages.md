@@ -206,6 +206,7 @@ plugins:
 所有頁面都自動帶有 **可折疊的目錄欄（TOC）**，需要 **修改 `_layouts/default.html`**，把 TOC 整合進每一頁的主架構。
 
 #### 5.1.0 最終資料夾結構
+
 ```txt
 IanBlog/
 ├── _layouts/
@@ -278,6 +279,7 @@ IanBlog/
 ```
 
 #### 5.1.3 新增 `assets/js/main.js`
+
 ```js
 tocbot.init({
   tocSelector: '.js-toc',
@@ -434,6 +436,7 @@ p code, li code {
 ![image](../assets/images/tools/github_pages_5-5.jpg)
 
 - 將style.css `@media` 部分改為
+
 ```css
 /* Responsive */
 @media (max-width: 768px) {
@@ -579,6 +582,54 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 ```
 
+### 5.8 加入navbar
+#### 5.8.1 `assets/css/style.css` 加入
+
+```css
+.navbar {
+    display: flex;
+    justify-content: center;  /* 中置連結群 */
+    flex-wrap: wrap;          /* 可自動換行 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1.5rem;
+    z-index: 1000;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links a {
+    margin: 0 0.5rem;
+    white-space: nowrap; /* 防止換行 */
+}
+
+.nav-links a:hover {
+    color: #007acc;
+}
+```
+
+#### 5.8.2 `_layouts/default.html` body 部分加入
+
+```html
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="https://liuian.github.io/pages-blog/">Home</a>
+        <a href="https://liuian.github.io/pages-blog/tools/">Tools</a>
+        <a href="https://liuian.github.io/pages-blog/notes/">Notes</a>
+        <a href="https://liuian.github.io/pages-blog/blog/">Blog</a>
+        <a href="https://liuian.github.io/pages-blog/about/">About</a>
+    </div>
+</nav>
+```
 
 ### 5.8 TOC 客製化自動捲動方式　
 TODO
