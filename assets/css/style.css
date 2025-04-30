@@ -81,7 +81,7 @@ body {
 
 /* TOC 切換按鈕 */
 #toggle-sidebar {
-    top:3rem;
+    top:3.5rem;
     left:1rem;
     background: #eee;
     border: 1px solid #ccc;
