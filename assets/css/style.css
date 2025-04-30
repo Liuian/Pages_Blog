@@ -52,8 +52,7 @@ body {
 /* Jump to top 按鈕 */
 .jump-top-btn {
     position: fixed;
-    /* bottom: 2rem; */
-    top:1.5rem;
+    bottom: 2rem;
     right: 1.5rem;
     background: #1a73e8;
     color: white;
@@ -69,7 +68,8 @@ body {
 /* Back to home 連結 */
 .back-home-link {
     position: fixed;
-    bottom: 2rem;
+    /* bottom: 2rem; */
+    top: 1.5rem;
     left: 1.5rem;
     background: #f0f0f0;
     color: #333;
