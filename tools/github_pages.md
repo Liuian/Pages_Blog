@@ -213,8 +213,9 @@ IanBlog/
 ├── assets/
 │   ├── css/
 │   │   └── style.scss            ← 高亮 TOC 的 CSS
-│   └── js/
-│       └── main.js               ← tocbot 的初始化腳本
+│   ├── js/
+│   |   └── main.js               ← tocbot 的初始化腳本
+|   └── images/
 │
 ├── index.md                      ← 首頁（含目錄導引）
 ├── README.md                     ← GitHub repo 說明（可選）

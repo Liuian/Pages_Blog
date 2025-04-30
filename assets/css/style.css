@@ -1,3 +1,4 @@
+/* 目前章節高亮 */
 .is-active-link {
     font-weight: bold;
     color: #1a73e8;
@@ -70,7 +71,7 @@ body {
     left: 1rem;
     background: #f0f0f0;
     color: #333;
-    padding: 0.25rem 0.75rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -174,5 +175,11 @@ p code, li code {
     .content {
         z-index: 0;
         position: relative;
+    }
+
+    .back-home-link {
+        position: relative;
+        top: auto;
+        left: auto;
     }
 }
