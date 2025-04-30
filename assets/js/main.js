@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Jump to top 功能
     const toTopBtn = document.createElement("button");
-    toTopBtn.textContent = "↑ Top";
+    toTopBtn.textContent = " ⬆ ";
     toTopBtn.className = "jump-top-btn";
     document.body.appendChild(toTopBtn);
     toTopBtn.addEventListener("click", function () {
