@@ -25,6 +25,15 @@ main.content {
     display: flex;
     justify-content: center;  /* 中置連結群 */
     flex-wrap: wrap;          /* 可自動換行 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1.5rem;
+    z-index: 1000;
+    font-family: "Segoe UI", sans-serif;
 }
 
 .nav-links {
