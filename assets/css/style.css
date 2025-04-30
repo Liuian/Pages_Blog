@@ -1,8 +1,3 @@
-.is-active-link {   /* 目前章節高亮 */
-    font-weight: bold;
-    color: #1a73e8;
-}
-
 img {
     max-width: 100%;    /* 圖片最大寬度為容器寬度 */
     height: auto;
@@ -15,6 +10,47 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+pre {   /* code - Style for code blocks (surrounded by triple backticks ```) */
+    background: #f5f5f5;       /* Light gray background */
+    border: 1px solid #ccc;    /* Gray border */
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;          /* Enable horizontal scroll for overflow */
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+code {  /* code - Additional styling for code content */
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+p code, li code {   /* code - Inline code styling (e.g. `example`) */
+    background-color: #eee;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* jump-top-btn - main.js */
+.jump-top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    font-size: 0.9rem;
+}
+
+/* navbar - default.html */
 .navbar {
     display: flex;
     justify-content: center;  /* 中置連結群 */
@@ -45,11 +81,21 @@ body {
     color: #007acc;
 }
 
+/* sidebar - default.html */
 .container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.sidebar-wrapper {
+    top: 3rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
 }
 
 .sidebar {
@@ -64,34 +110,16 @@ body {
     height: max-content;
 }
 
-.sidebar-wrapper {  /* 包住 sidebar 與切換按鈕的外框 */
-    top: 3rem;
-    margin-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    align-self: flex-start;
-}
-
 .sidebar.collapsed {    /* 收合狀態下隱藏 TOC */
     display: none;
 }
 
-.jump-top-btn {
-    position: fixed;
-    bottom: 2rem;
-    right: 1rem;
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 0.6rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
-    z-index: 999;
-    font-size: 0.9rem;
+.content {
+    flex: 1;
+    min-width: 0;
 }
 
+/* sidbar - main.js */
 #toggle-sidebar {   /* TOC 切換按鈕 */
     top:3.5rem;
     left:1rem;
@@ -105,36 +133,14 @@ body {
     text-align: left;
 }
 
-.content {
-  flex: 1;
-  min-width: 0;
+/* sidbar - tocbot.min.js */
+.is-active-link {   /* 目前章節高亮 */
+    font-weight: bold;
+    color: #1a73e8;
 }
 
-pre {   /* code blocks - Style for code blocks (surrounded by triple backticks ```) */
-    background: #f5f5f5;       /* Light gray background */
-    border: 1px solid #ccc;    /* Gray border */
-    border-radius: 6px;
-    padding: 1rem;
-    overflow-x: auto;          /* Enable horizontal scroll for overflow */
-    font-family: Consolas, Monaco, 'Courier New', monospace;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-code {  /* code blocks - Additional styling for code content */
-    font-family: Consolas, Monaco, 'Courier New', monospace;
-    font-size: 0.95rem;
-    color: #333;
-}
-
-p code, li code {   /* code blocks - Inline code styling (e.g. `example`) */
-    background-color: #eee;
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-    font-size: 0.9em;
-}
-
-@media (max-width: 768px) { /* Responsive */
+/* Responsive */
+@media (max-width: 768px) { 
     .container {
         flex-direction: column;
         padding: 0.5rem;
