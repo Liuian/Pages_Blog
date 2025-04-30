@@ -53,7 +53,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     position: fixed;
     bottom: 2rem;
     right: 1rem;
-    background: #1a73e8;
+    background: #0f172a;
     color: white;
     border: none;
     padding: 0.6rem 1rem;
@@ -89,7 +89,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 .nav-links a {
     text-decoration: none;              /* 移除底線 */
     color: white;                     /* 連結字體顏色 */
-    background-color: #1a73e8;        /* 背景色（可自定） */
+    background-color: #0f172a;        /* 背景色（可自定） */
     padding: 0.1rem 0.2rem;             /* 內距讓按鈕更有空間 */
     border-radius: 4px;                 /* 圓角 */
     margin-right: 1rem;                 /* 連結之間的間距 */
