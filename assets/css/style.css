@@ -24,8 +24,8 @@ body {
 
 /* 包住 sidebar 與切換按鈕的外框 */
 .sidebar-wrapper {
-    margin-right: 2rem;
     top: 3rem;
+    margin-right: 2rem;
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -66,9 +66,8 @@ body {
 
 .back-home-link {
     position: fixed;
-    /* bottom: 2rem; */
     top: 1.5rem;
-    left: 1.5rem;
+    left: 1rem;
     background: #f0f0f0;
     color: #333;
     padding: 0.5rem 1rem;
@@ -82,6 +81,8 @@ body {
 
 /* TOC 切換按鈕 */
 #toggle-sidebar {
+    top:2.5rem;
+    left:1rem;
     background: #eee;
     border: 1px solid #ccc;
     padding: 0.5rem 1rem;
