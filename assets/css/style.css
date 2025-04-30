@@ -87,19 +87,17 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 }
 
 .nav-links a {
-    /* margin: 0 0.5rem; */
-    /* white-space: nowrap; 防止換行 */
-    text-decoration: none;           /* 移除底線 */
-    color: white;                    /* 連結字體顏色 */
-    background-color: #1a73e8;       /* 背景色（可自定） */
-    padding: 0.1rem 0.2rem;        /* 內距讓按鈕更有空間 */
-    border-radius: 4px;              /* 圓角 */
-    margin-right: 0.5rem;            /* 連結之間的間距 */
+    text-decoration: none;              /* 移除底線 */
+    color: white;                     /* 連結字體顏色 */
+    background-color: #1a73e8;        /* 背景色（可自定） */
+    padding: 0.1rem 0.2rem;             /* 內距讓按鈕更有空間 */
+    border-radius: 4px;                 /* 圓角 */
+    margin-right: 1rem;               /* 連結之間的間距 */
     transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #007acc;
+    color: #000000;
 }
 
 /* sidebar - default.html */
