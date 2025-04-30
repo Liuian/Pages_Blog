@@ -7,7 +7,19 @@ img {
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  /* font-family: system-ui, sans-serif; */
+  font-family: 'Segoe UI', 'Arial', sans-serif; /* 現代字體 */
+  line-height: 1.6; /* 行高增大，提升可讀性 */
+}
+
+h1, h2, h3 {
+    font-weight: 600; /* 標題加粗 */
+    color: #333; /* 標題顏色 */
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem; /* 段落間距 */
 }
 
 pre {   /* code - Style for code blocks (surrounded by triple backticks ```) */
@@ -25,6 +37,9 @@ code {  /* code - Additional styling for code content */
     font-family: Consolas, Monaco, 'Courier New', monospace;
     font-size: 0.95rem;
     color: #333;
+    background-color: #f1f1f1; /* 內嵌程式碼區塊背景 */
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
 }
 
 p code, li code {   /* code - Inline code styling (e.g. `example`) */
