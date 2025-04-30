@@ -1,3 +1,4 @@
+
 /* 目前章節高亮 */
 .is-active-link {
     font-weight: bold;
@@ -16,26 +17,36 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+main.content {
+    padding-top: 4.5rem;  /* 對應 navbar 的高度 */
+}
+
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eaeaea;
-    padding: 1rem 2rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
     z-index: 1000;
-  }
-  .navbar a {
-    color: #333333;
-    text-decoration: none;
+}
+
+.navbar a {
     margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
     font-weight: 500;
-  }
-  .navbar a:hover {
-    color: #1a73e8;
-  }
+}
+
+.navbar a:hover {
+    color: #007acc;
+}
+
   
 
 .container {
