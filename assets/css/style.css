@@ -11,7 +11,7 @@ img {
     display: block;
     margin: 1rem auto;
 }
-  
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
@@ -51,23 +51,11 @@ main.content {
     color: #007acc;
 }
 
-  
-
 .container {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-}
-
-/* 包住 sidebar 與切換按鈕的外框 */
-.sidebar-wrapper {
-    top: 3rem;
-    margin-right: 2rem;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    align-self: flex-start;
 }
 
 .sidebar {
@@ -80,6 +68,16 @@ main.content {
     padding: 1rem;
     margin-right: 2rem;
     height: max-content;
+}
+
+/* 包住 sidebar 與切換按鈕的外框 */
+.sidebar-wrapper {
+    top: 3rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
 }
 
 /* 收合狀態下隱藏 TOC */
@@ -102,21 +100,6 @@ main.content {
     font-size: 0.9rem;
 }
 
-/* .back-home-link {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    background: #f0f0f0;
-    color: #333;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    z-index: 999;
-    font-size: 0.9rem;
-} */
-
-
 /* TOC 切換按鈕 */
 #toggle-sidebar {
     top:3.5rem;
@@ -136,8 +119,7 @@ main.content {
   min-width: 0;
 }
 
-/*//////////////////////////////////////////////////////////////*/
-/* Style for code blocks (surrounded by triple backticks ```) */
+/* code blocks - Style for code blocks (surrounded by triple backticks ```) */
 pre {
     background: #f5f5f5;       /* Light gray background */
     border: 1px solid #ccc;    /* Gray border */
@@ -149,21 +131,20 @@ pre {
     line-height: 1.5;
 }
 
-/* Additional styling for code content */
+/* code blocks - Additional styling for code content */
 code {
     font-family: Consolas, Monaco, 'Courier New', monospace;
     font-size: 0.95rem;
     color: #333;
 }
 
-/* Inline code styling (e.g. `example`) */
+/* code blocks - Inline code styling (e.g. `example`) */
 p code, li code {
     background-color: #eee;
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-size: 0.9em;
 }
-/*//////////////////////////////////////////////////////////////*/
 
 
 /* Responsive */
