@@ -7,19 +7,51 @@ img {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', 'Arial', sans-serif; /* 現代字體 */
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-size: 16px;
   line-height: 1.6; /* 行高增大，提升可讀性 */
+  color: #222;
+  background-color: #fff;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 600; /* 標題加粗 */
-    color: #333; /* 標題顏色 */
-    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    color: #222; /* 標題顏色 */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-p {
-    margin-bottom: 1rem; /* 段落間距 */
+h1 {
+    font-size: 2rem;
 }
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+  
+p, ul, ol {     /* 讓段落、列表（有序 ol 與無序 ul）底下有一點空間，讓文字區塊之間更清楚分隔 */
+    margin-bottom: 1.2rem; /* 段落間距 */
+}
+
+a {     /* 連結 */
+    color: #0066cc;               /* 設定連結顏色 */
+    text-decoration: none;          /* 移除預設的底線 */
+    transition: color 0.3s ease;
+}
+
+a:hover {   /* 連結 - 滑鼠 hover 效果 */
+    color: #004a99;
+}
+  
 
 pre {   /* code - Style for code blocks (surrounded by triple backticks ```) */
     background: #f5f5f5;       /* Light gray background */
@@ -53,7 +85,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     position: fixed;
     bottom: 2rem;
     right: 1rem;
-    background: #0f172a;
+    background: #0a2540;
     color: white;
     border: none;
     padding: 0.6rem 1rem;
@@ -89,7 +121,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 .nav-links a {
     text-decoration: none;              /* 移除底線 */
     color: white;                     /* 連結字體顏色 */
-    background-color: #0f172a;        /* 背景色（可自定） */
+    background-color: #0a2540;        /* 背景色（可自定） */
     padding: 0.1rem 0.2rem;             /* 內距讓按鈕更有空間 */
     border-radius: 4px;                 /* 圓角 */
     margin-right: 1rem;                 /* 連結之間的間距 */
