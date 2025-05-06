@@ -1,7 +1,7 @@
 main.content {
     max-width: 760px;
     margin: 0 auto;
-    padding: 3rem 1.5rem 2rem; /* Keep space for navbar */
+    padding: 2rem 1.5rem 2rem; /* Keep space for navbar */
 }
 
 main.content h1:first-of-type,
