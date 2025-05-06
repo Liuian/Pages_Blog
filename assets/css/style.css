@@ -1,9 +1,8 @@
 :root {
     --primary-color: #191970;       /* links, buttons, and highlights */
     --accent-color: #0F52BA;        /* Hover States, Active States */
-    --code-bg: #000080;             /* Sidebar/Footer */
     --background-color: #f9f9f9;
-    --block: #ccc;                  /* Code Blocks */
+    --code-block: #ccc;                  /* Code Blocks */
     --text-color: #222222;
   }  
 
@@ -72,7 +71,7 @@ a:hover {   /* 連結 - 滑鼠 hover 效果 */
 } 
 
 pre {   /* code - Style for code blocks (surrounded by triple backticks ```) */
-    background: var(--block);       /* Light gray background */
+    background: var(--code-block);       /* Light gray background */
     border: 1px solid var(--text-color);    /* Gray border */
     border-radius: 6px;
     padding: 1rem;
@@ -86,7 +85,6 @@ code {  /* code - Additional styling for code content */
     font-family: Consolas, Monaco, 'Courier New', monospace;
     font-size: 0.95rem;
     color: var(--text-color);
-    /* background-color: var(--block); 內嵌程式碼區塊背景 */
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
 }
@@ -206,6 +204,10 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     cursor: pointer;
     font-size: 1rem;
     text-align: left;
+}
+
+#toggle-sidebar:hover {
+    background: var(--accent-color);
 }
 
 /* sidbar - tocbot.min.js */
