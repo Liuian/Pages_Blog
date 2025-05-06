@@ -152,7 +152,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 }
 
 .nav-links a:hover {
-    color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 /* sidebar - default.html */
@@ -197,8 +197,9 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 #toggle-sidebar {   /* TOC 切換按鈕 */
     top:3.5rem;
     left:1rem;
-    background: var(--block);
+    background: var(--primary-color);
     border: 1px solid var(--text-color);
+    color: var(--background-color);
     padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
     border-radius: 4px;
