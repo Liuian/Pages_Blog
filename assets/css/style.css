@@ -73,8 +73,8 @@ a:hover {   /* 連結 - 滑鼠 hover 效果 */
   
 
 pre {   /* code - Style for code blocks (surrounded by triple backticks ```) */
-    background: var(--code-bg);       /* Light gray background */
-    border: 1px solid var(--code-bg);    /* Gray border */
+    background: var(--block);       /* Light gray background */
+    border: 1px solid var(--text-color);    /* Gray border */
     border-radius: 6px;
     padding: 1rem;
     overflow-x: auto;          /* Enable horizontal scroll for overflow */
@@ -87,14 +87,14 @@ code {  /* code - Additional styling for code content */
     font-family: Consolas, Monaco, 'Courier New', monospace;
     font-size: 0.95rem;
     color: var(--text-color);
-    background-color: var(--block); /* 內嵌程式碼區塊背景 */
+    /* background-color: var(--block); 內嵌程式碼區塊背景 */
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
 }
 
 p code, li code {   /* code - Inline code styling (e.g. `example`) */
-    background-color: var(--code-bg);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-size: 0.9em;
