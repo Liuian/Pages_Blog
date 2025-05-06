@@ -1,9 +1,10 @@
 :root {
     --primary-color: #191970;       /* links, buttons, and highlights */
     --accent-color: #0F52BA;        /* Hover States, Active States */
+    --code-bg: #000080;             /* Sidebar/Footer */
     --background-color: #f9f9f9;
+    --block: #ccc;                  /* Code Blocks */
     --text-color: #222222;
-    --code-bg: #000080;             /* Sidebar/Footer/Code Blocks */
   }  
 
 main.content {
@@ -86,7 +87,7 @@ code {  /* code - Additional styling for code content */
     font-family: Consolas, Monaco, 'Courier New', monospace;
     font-size: 0.95rem;
     color: var(--text-color);
-    background-color: var(--code-bg); /* 內嵌程式碼區塊背景 */
+    background-color: var(--block); /* 內嵌程式碼區塊背景 */
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
 }
@@ -118,7 +119,6 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 .jump-top-btn:hover {
     background: var(--accent-color);
 }
-
 
 /* navbar - default.html */
 .navbar {
@@ -198,8 +198,8 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 #toggle-sidebar {   /* TOC 切換按鈕 */
     top:3.5rem;
     left:1rem;
-    background: #eee;
-    border: 1px solid #ccc;
+    background: var(--background-color);
+    border: 1px solid var(--block);
     padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
     border-radius: 4px;
