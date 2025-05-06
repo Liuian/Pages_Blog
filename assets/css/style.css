@@ -143,7 +143,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 
 .nav-links a {
     text-decoration: none;                  /* 移除底線 */
-    color: var(--text-color);               /* 連結字體顏色 */
+    color: var(--background-color);               /* 連結字體顏色 */
     background-color: var(--primary-color); /* 背景色（可自定） */
     padding: 0.1rem 0.2rem;                 /* 內距讓按鈕更有空間 */
     border-radius: 4px;                     /* 圓角 */
