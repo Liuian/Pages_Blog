@@ -8,6 +8,8 @@ title: Home
 ## Tools
 - Python Code
     - [whisper_audio_to_txt](https://liuian.github.io/pages-blog/tools/python_code/whisper_audio_to_txt)
+- [autohotkey](https://liuian.github.io/pages-blog/tools/autohotkey)
+- [docker](https://liuian.github.io/pages-blog/tools/docker)
 - [excel](https://liuian.github.io/pages-blog/tools/excel)
 - [flowchart](https://liuian.github.io/pages-blog/tools/flowchart)
 - [gis_qgis_overpass](https://liuian.github.io/pages-blog/tools/gis_qgis_overpass)
@@ -24,5 +26,9 @@ title: Home
 
 ## Notes
 - [depth_first_search_in_python](https://liuian.github.io/pages-blog/notes/depth_first_search_in_python)
+- [time_complexity](https://liuian.github.io/pages-blog/notes/time_complexity)
 
 ## Blog
+- [Sleep 1](https://liuian.github.io/pages-blog/blog/sleep-1)
+- [Sleep 2](https://liuian.github.io/pages-blog/blog/sleep-2)
+- [Sleep 3](https://liuian.github.io/pages-blog/blog/sleep-3)
