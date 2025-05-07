@@ -120,7 +120,8 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 /* navbar - default.html */
 .navbar {
     display: flex;
-    justify-content: center;  /* 中置連結群 */
+    justify-content: space-between;  /* 中置連結群 */
+    align-items: center;
     flex-wrap: wrap;          /* 可自動換行 */
     position: fixed;
     top: 0;
@@ -133,10 +134,17 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-family: "Segoe UI", 'Arial',sans-serif;
 }
 
+/* 左側 TOC 按鈕容器 */
+.nav-left {
+    flex-shrink: 0; /* 避免被壓縮 */
+}
+
 .nav-links {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
+    gap: 1rem;
+    flex-grow: 1;
 }
 
 .nav-links a {
