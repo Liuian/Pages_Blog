@@ -1,5 +1,8 @@
 "Sleep"_What you experience during the night.
 Reading notes
+
+![image](../assets/images/blog/sleep2.jpg)
+
 OUTLINE
 Four different states in a 90 minutes cycle.
     1. Dozing off - non REM stage 1

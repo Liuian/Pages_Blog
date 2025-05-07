@@ -1,5 +1,7 @@
 "Sleep"_After reading chapter one, you adjust sleeping schedule spontaneously.
-Reading notes
+
+![image](../assets/images/blog/sleep1.jpg)
+
 OUTLINE
 What is circadian rhythms?
 How important is human body's circadian rhythms?

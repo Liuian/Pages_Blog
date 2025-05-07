@@ -1,6 +1,9 @@
 "Sleep"_The secret of the 90 minutes cycle.
 Reading notes
 OUTLINE
+
+![image](../assets/images/blog/sleep3.jpg)
+
 The secret of the 90 minutes cycle.
 Some mindsets let you feel stress-free to sleep.
 Methods to improve your life according to 90 minutes cycle.

@@ -28,3 +28,8 @@ Docker: Install containers for SQL Server on Linux - SQL Server
 This quickstart shows how to use Docker to run the SQL Server Linux container images. You connect to a database and run…learn.microsoft.com
 How to Install SQL Server Management Studio on a Mac
 SQL Server Management Studio is a free Windows tool that allows you to access and manage all components of an SQL…builtin.com
+
+![image](../assets/images/tools/docker1.jpg)
+![image](../assets/images/tools/docker2.jpg)
+![image](../assets/images/tools/docker3.jpg)
+![image](../assets/images/tools/docker4.jpg)
