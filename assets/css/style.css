@@ -198,10 +198,8 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     padding: 0.1rem 1rem;                 /* 內距讓按鈕更有空間 */
     border-radius: 4px;
     transition: background-color 0.3s;
-    /* border: 1px solid var(--text-color); */
-    /* cursor: pointer; */
-    /* font-size: 1rem; */
-    /* text-align: left; */
+    border: none;
+    font-size: 1rem;
     
     /* 靠左對齊 */
     margin-left: 0;
