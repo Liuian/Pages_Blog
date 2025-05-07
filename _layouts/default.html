@@ -13,6 +13,7 @@
     </head>
     <body>  <!-- <body> element is where the visible content of the page will be placed -->
         <nav class="navbar">
+            <button id="toggle-sidebar">☰</button>
             <div class="nav-links">
                 <a href="https://liuian.github.io/pages-blog/">🏠︎ Home</a>
                 <a href="https://liuian.github.io/pages-blog/tools/">🛠 Tools</a>
@@ -22,9 +23,9 @@
             </div>
         </nav>
 
-        <div class="container"> <!-- TOC -->
+        <div class="container">
             <div class="sidebar-wrapper">
-                <button id="toggle-sidebar">☰</button>
+                <!-- <button id="toggle-sidebar">☰</button> -->
                 <nav class="sidebar js-toc"></nav>
             </div>
             <main class="content js-toc-content">{{ content }}</main>   <!-- 內容區塊 -->
