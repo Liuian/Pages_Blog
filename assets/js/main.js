@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggle-sidebar");
     const sidebar = document.querySelector(".sidebar");
     toggleButton.addEventListener("click", function () {
-        sidebar.classList.toggle("collapsed");
-        toggleButton.classList.toggle("expanded"); // 讓按鈕切換樣式
+        // sidebar.classList.toggle("collapsed");
+        // toggleButton.classList.toggle("expanded"); // 讓按鈕切換樣式
+        const isCollapsed = sidebar.classList.toggle("collapsed");
+        toggleButton.classList.toggle("expanded", !isCollapsed); 
     });
 
     // Jump to top 功能
