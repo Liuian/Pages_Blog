@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #191970;       /* links, buttons, and highlights */
-    --accent-color: #0F52BA;        /* Hover States, Active States */
-    --background-color: #f9f9f9;
-    --code-block: #ccc;                  /* Code Blocks */
-    --text-color: #222222;
-  }  
+    --primary-color: #1434A4;
+    --accent-color: #5EA1D7;
+    --background-color: #f5f7fa;
+    --code-block: #e8edf3;
+    --text-color: #1a1a1a;
+}
+  
 
 main.content {
     max-width: 760px;
