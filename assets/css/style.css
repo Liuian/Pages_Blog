@@ -134,14 +134,12 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-family: "Segoe UI", 'Arial',sans-serif;
 }
 
-/* 左側 TOC 按鈕容器 */
-.nav-left {
-    flex-shrink: 0; /* 避免被壓縮 */
+.nav-left {     /* 左側 TOC 按鈕容器 */
+    flex-shrink: 0;     /* 避免被壓縮 */
 }
 
 .nav-links {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
     gap: 1rem;
     flex-grow: 1;
@@ -210,6 +208,13 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-size: 16px; 
 }
 
+#toggle-sidebar.expanded {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: bold;
+    background-color: var(--accent-color); /* 選配：讓顏色也改變 */
+    transition: all 0.3s ease;
+}
 
 #toggle-sidebar:hover {
     background: var(--accent-color);

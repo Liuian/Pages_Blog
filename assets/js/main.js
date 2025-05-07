@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sidebar = document.querySelector(".sidebar");
     toggleButton.addEventListener("click", function () {
         sidebar.classList.toggle("collapsed");
+        toggleButton.classList.toggle("expanded"); // 讓按鈕切換樣式
     });
 
     // Jump to top 功能
