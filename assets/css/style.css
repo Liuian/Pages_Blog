@@ -201,7 +201,11 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     /* border: 1px solid var(--text-color); */
     /* cursor: pointer; */
     /* font-size: 1rem; */
-    /* text-align: left; */    
+    /* text-align: left; */
+    
+    /* 靠左對齊 */
+    margin-left: 0;
+    align-self: flex-start; /* 如果父容器是 flex，可以用這個固定靠左 */    
 }
 
 
