@@ -46,4 +46,5 @@ NOTE : A usual misunderstand about blue light.
 Blue light is not a bad material all the time. Actually, daylight is full of blue light, and it is good during the day. The damage about blue light happened when we use it at wrong time.
 ```
 
+## Reference
 Reference from my own artical on medium: [“Sleep”_After reading chapter one, you adjust sleeping schedule spontaneously.](https://medium.com/@LiuIan/sleep-after-reading-chapter-one-you-adjust-sleeping-schedule-spontaneously-d26da346c029)

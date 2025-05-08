@@ -343,14 +343,17 @@ In short, `geometry.coords` is used to get all points for simpler geometries, bu
 - `geometry` -> `goemetry.geoms`
 - reference: [shapely Geometry](https://shapely.readthedocs.io/en/2.0.3/geometry.html)
 
-# python basic
-Python基礎語法
-for loop
+## python basic
+### for loop
+```python
 sequences = [0, 1, 2, 3, 4, 5]
 for i in sequences:
   print(i)
 
 # output: 0 1 2 3 4 5
+```
+
+```python
 for i in range(10):
     print(i, end=" ")
     
@@ -361,19 +364,28 @@ for i in range(20, 2, -2):
 # output:
 # 0 1 2 3 4 5 6 7 8 9
 # 20 18 16 14 12 10 8 6 4
+```
+
+```python
 # Example with two arguments
 for i in range(-1, 5):
     print(i, end=", ") # prints: -1, 0, 1, 2, 3, 4, 
-list
+```
+
+### list
 In Python, list[-1] returns the last element of the list.
 
-length of a list
+#### length of a list
+```python
 my_list = [1, 2, 3, 4, 5]
 print(len(my_list))
 
 # Output:
 # 5
-Split String in List
+```
+
+#### Split String in List
+```python
 string = 'geeksforgeeks'
 lst = []
 
@@ -383,23 +395,33 @@ for letter in string:
 print(lst)
 
 # output: ['g', 'e', 'e', 'k', 's', 'f', 'o', 'r', 'g', 'e', 'e', 'k', 's']
-Remove List Items
+```
+
+#### Remove List Items
+```python
 thislist = ["apple", "banana", "cherry"]
 thislist.pop(1)
 print(thislist)
 
 # output: ['apple', 'cherry']
 # https://www.w3schools.com/python/python_lists_remove.asp
-Check if a list is empty or not
+```
+
+#### Check if a list is empty or not
+```python
 # Python code to check for empty list 
 lis1 = [] 
 if lis1==[]: 
     print("Empty List") 
 else: 
     print("The list is not empty")
-Python - Check if a list is empty or not - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-list of object
+```
+
+- [Check if a list is empty or not](https://www.geeksforgeeks.org/python-check-if-list-empty-not/?source=post_page-----a067e7efe472---------------------------------------)
+
+
+### list of object
+```python
 # neecode:meeting schedule
 """
 Definition of Interval:
@@ -421,22 +443,29 @@ class Solution:
                 return False
         
         return True
-How to create a list of object in Python class - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-檢查 list 列表是否為空
+```
+- [How to create a list of object in Python class - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-create-a-list-of-object-in-python-class/?source=post_page-----a067e7efe472---------------------------------------)
+
+### 檢查 list 列表是否為空
+```python
 mylist = list() # or mylist = []
 print(type(mylist))
 print(len(mylist))
+```
+```python
 if len(mylist) == 0:
     print('mylist is empty')
 # <class 'list'>
 # 0
 # mylist is empty
 # https://shengyu7697.github.io/python-check-list-empty/
-List append()
-list.append(item)
-item - an item (number, string, list etc.) to be added at the end of the list
+```
 
+### List append()
+- list.append(item)
+- item - an item (number, string, list etc.) to be added at the end of the list
+
+```python
 # neetcode-two sum
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -448,156 +477,32 @@ class Solution:
                     Ans.append(j)
                     return Ans
         return False
-enumerate()
-enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
-enumerate(sequence, [start=0])
-sequence - 一个序列、迭代器或其他支持迭代对象。
-start - 下标起始位置。
+```
 
+### enumerate()
+- enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
+- enumerate(sequence, [start=0])
+- sequence - 一个序列、迭代器或其他支持迭代对象。
+- start - 下标起始位置。
+
+```python
 seq = ['one', 'two', 'three']
 for i, element in enumerate(seq):
     print(i, element)
 # 0 one
 # 1 two
 # 2 three
-pop()
-Python List pop() Method - GeeksforGeeks
-Learn all about the Python list pop() method. Here in this tutorial, you will get a detailed explanation of the list…www.geeksforgeeks.org
-宣告list的長度
-ans = [0] * (n) #宣告list的長度
-Python - 2-D Array
-#宣告二維array
-rows, cols = (5, 5)
-arr = [[0]*cols]*rows
-print(arr)
+```
 
-#output
-[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
-rows, cols = (5, 5)
-arr = [[0 for i in range(cols)] for j in range(rows)]
-print(arr)
+### pop()
+- [Python List pop() Method](https://www.geeksforgeeks.org/python-list-pop-method/?source=post_page-----a067e7efe472---------------------------------------)
 
-#output
-[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
-from array import *
+### break, continue, pass
+- break：強制跳出 ❮整個❯ 迴圈
+- continue：強制跳出 ❮本次❯ 迴圈，繼續進入下一圈
+- pass：不做任何事情，所有的程式都將繼續
 
-T = [[11, 12, 5, 2], [15, 6,10], [10, 8, 12, 5], [12,15,8,6]]
-for r in T:
-   for c in r:
-      print(c,end = " ")
-   print()
-
-# output
-11 12 5 2 
-15 6 10 
-10 8 12 5 
-12 15 8 6 
-from array import *
-
-T = [[11, 12, 5, 2], [15, 6,10], [10, 8, 12, 5], [12,15,8,6]]
-
-T[2] = [11,9]
-T[0][3] = 7
-for r in T:
-   for c in r:
-      print(c,end = " ")
-   print()
-
-# output
-11 12 5  7 
-15  6 10 
-11  9 
-12 15 8  6 
-Python - 2-D Array
-Python - 2-D Array - Two dimensional array is an array within an array. It is an array of arrays. In this type of array…www.tutorialspoint.com
-Python | Using 2D arrays/lists the right way - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-list.append(list) 把list加進list
-res = [] 
-res.append([nums[i], nums[j], nums[k]])
-#neetcode Three Integer Sum
-class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        res = []
-
-        nums.sort()
-
-        for i in range(len(nums)):
-            for j in range(i + 1, len(nums)):
-                for k in range(j + 1, len(nums)):
-                    if nums[i] + nums[j] + nums[k] == 0 and [nums[i], nums[j], nums[k]] not in res:
-                        res.append([nums[i], nums[j], nums[k]])
-
-        return res
-Check if element exists in list in Python
-lst=[ 1, 6, 3, 5, 3, 4 ] 
-#checking if element 7 is present
-# in the given list or not
-i=7 
-# if element present then return
-# exist otherwise not exist
-if i in lst: 
-    print("exist") 
-else: 
-    print("not exist")
-#output
-not exist
-res = []
-
-if [nums[i], nums[j], nums[k]] not in res:
-Stack and Queues in Python
-stack:  is a linear data structure that follows the Last-In-First-Out (LIFO) principle
-queue: is a linear data structure that follows the First-In-First-Out (FIFO)principle.
-
-# Python code to demonstrate Implementing  
-# stack using list 
-stack = ["Amar", "Akbar", "Anthony"] 
-stack.append("Ram") 
-stack.append("Iqbal") 
-print(stack) 
-  
-# Removes the last item 
-print(stack.pop()) 
-  
-print(stack) 
-  
-# Removes the last item 
-print(stack.pop()) 
-  
-print(stack) 
-
-#output
-['Amar', 'Akbar', 'Anthony', 'Ram', 'Iqbal']
-Iqbal
-['Amar', 'Akbar', 'Anthony', 'Ram']
-Ram
-['Amar', 'Akbar', 'Anthony']
-# Python code to demonstrate Implementing  
-# Queue using list 
-queue = ["Amar", "Akbar", "Anthony"] 
-queue.append("Ram") 
-queue.append("Iqbal") 
-print(queue) 
-  
-# Removes the first item 
-print(queue.pop(0)) 
-  
-print(queue) 
-  
-# Removes the first item 
-print(queue.pop(0)) 
-  
-print(queue) 
-# output
-['Amar', 'Akbar', 'Anthony', 'Ram', 'Iqbal']
-Amar
-['Akbar', 'Anthony', 'Ram', 'Iqbal']
-Akbar
-['Anthony', 'Ram', 'Iqbal']
-break, continue, pass
-break：強制跳出 ❮整個❯ 迴圈
-continue：強制跳出 ❮本次❯ 迴圈，繼續進入下一圈
-pass：不做任何事情，所有的程式都將繼續
+```python
 count=0
 for string in 'content':
     count+=1
@@ -615,29 +520,15 @@ print('迴圈執行了 %d 次' %count)
 # 迴圈結束
 # 迴圈執行了四次
 #https://medium.com/%40chiayinchen/1-%E5%88%86%E9%90%98%E6%90%9E%E6%87%82-python-%E8%BF%B4%E5%9C%88%E6%8E%A7%E5%88%B6-break-continue-pass-be290cd1f9d8
-Dictionary + HashMap + get()
-Dictionary
-Python 初學第九講 - 字典
-Dictionary，另一個存資料的好方法medium.com
-Python 字典(Dictionary) values()方法
-Python 字典(Dictionary) values() 函数以列表返回字典中的所有值
-#!/usr/bin/python
+```
 
-tinydict = {'Name': 'Runoob', 'Age': 7}
+### Dictionary + HashMap + get()
+#### Dictionary
 
-print "Value : %s" %  tinydict.values()
+- [Python 初學第九講 - 字典](https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3)
 
-# outpute:
-# Value : [7, 'Runoob']
-Python 字典(Dictionary) values()方法
-Python 字典(Dictionary) values()方法 Python 字典 描述 Python 字典(Dictionary) values() 函数以列表返回字典中的所有值。 语法 values()方法语法：…www.runoob.com
-defaultdict()
-from collections import defaultdict
-# 使用 defaultdict 來自 collections 模組，這是一種特殊的字典，可以在鍵不存在時自動為其分配一個默認值。
-
-ans = defaultdict(list)
-# 初始化 ans 為一個 defaultdict，其默認值是一個空列表。
-HashMap
+#### HashMap
+```python
 # neetcode-Valid Anagram
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -652,6 +543,8 @@ class Solution:
             count[t[i]] = countT.get(t[i], 0) + 1  #!!!!!
         
         return countS == countT
+```
+```python
 # neetcode-two sum
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -662,11 +555,14 @@ class Solution:
             if diff in prevmap:   #!!!!!!!
                 return [prevmap[diff], i]
             prevmap[element] = i
-get()
-dict.get(key, value)
-key -- 字典中要查找的键。
-value -- 可选，如果指定键的值不存在时，返回该默认值。
+```
 
+#### get()
+- dict.get(key, value)
+- key -- 字典中要查找的键。
+- value -- 可选，如果指定键的值不存在时，返回该默认值。
+
+```python
 tinydict = {'Name': 'Runoob', 'Age': 27}
 
 print ("Age : ", tinydict.get('Age'))
@@ -681,10 +577,13 @@ print ('Salary: ', tinydict.get('Salary', 0.0))
 # Age : 27
 # Sex : None
 # Salary: 0.0
-get() 方法 Vs dict[key] 访问元素区别
-get(key) 方法在 key（键）不在字典中时，可以返回默认值 None 或者设置的默认值。
-dict[key] 在 key（键）不在字典中时，会触发 KeyError 异常。
+```
 
+- get() 方法 Vs dict[key] 访问元素区别
+- get(key) 方法在 key（键）不在字典中时，可以返回默认值 None 或者设置的默认值。
+- dict[key] 在 key（键）不在字典中时，会触发 KeyError 异常。
+
+```python
 >>> runoob = {}
 >>> print('URL: ', runoob.get('url'))     # 返回 None
 URL:  None
@@ -694,59 +593,12 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'url'
 >>>
-Python3 字典 get() 方法
-Python3 字典 get() 方法 Python3 字典 描述 Python 字典 get() 函数返回指定键的值。 语法 get()方法语法： dict.get(key[, value]) 参数 key -- 字典中要查找的键。…www.runoob.com
-Dictionary items()
-# Python program to show working 
-# of items() method in Dictionary 
+```
 
-# Dictionary with three items 
-Dictionary1 = { 'A': 'Geeks', 'B': 4, 'C': 'Geeks' } 
+- [Python3 字典 get() 方法](https://www.runoob.com/python3/python3-att-dictionary-get.html?source=post_page-----a067e7efe472---------------------------------------)
 
-print("Dictionary items:") 
-
-# Printing all the items of the Dictionary 
-print(Dictionary1.items())
-
-# output
-Dictionary items:
-dict_items([('A', 'Geeks'), ('B', 4), ('C', 'Geeks')])
-Python Dictionary items() method - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-如何取tuple in list 中tuple的所有值
-for n, c in dic.items():  
-
-# neetcode: Top K Elements in List
-class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        dic = {}    # key -> list中的數字; value -> 數有幾次
-        count = [[]for i in range(len(nums) + 1)]  # 1 * (len(nums) + 1) array, count[1]存數到一次的數字, 以此類推
-        ans = []
-
-        for n in nums:
-            dic[n] = dic.get(n, 0) + 1
-        # 跟dic 反向存到2-dim array
-        for n, c in dic.items():  
-            count[c].append(n)
-        # 從最多的開始往下找
-        for i in range(len(nums), 0, -1):
-            if count[i] != []:
-                for num in count[i]:
-                    ans.append(num)
-            if len(ans) >= k:
-                return ans
-
-        return False
-string
-ord()
-The ord() function returns the number representing the unicode code of a specified character.
-
-x = ord("h")
-
-print(x)
-
-# 104
-Remove Whitespace from String
+### Remove Whitespace from String
+```python
 def remove(string):
   return string.replace(" ", "")
 # Driver Program
@@ -754,7 +606,10 @@ string = ' g e e k '
 print(remove(string))
 
 # geek
-Remove all characters other than alphabets from string
+```
+
+### Remove all characters other than alphabets from string
+```python
 # Python program to remove all the 
 # characters other than alphabets
  
@@ -774,28 +629,19 @@ s = "$Gee*k;s..fo, r'Ge^eks?"
 removeSpecialCharacter(s)
 
 # output: GeeksforGeeks
-Remove all characters other than alphabets from string - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-String Slices
-A "slice" in Python is powerful way of referring to sub-parts of a string. The syntax is s[i:j]meaning the substring starting at index i, running up to but not including index j.
-s = 'Hello'
-  #    01234    ## Showing the index numbers for the 'Hello'
-  s[1:4]  ## 'ell' -- starting at 1, up to but not including 4
-  s[0:2]  ## 'He'
-If the first slice number is omitted, it just uses the start of the string, and likewise if the second slice number is omitted, the slice runs through the end of the string.
-s = 'Hello'
-  #    01234
-  s[:2]  ## 'He', omit first number uses start of string
-  s[2:]  ## 'llo', omit second number uses end of string
-字串處理 lower() upper() capitalize() title()
-upper() : 將所有字母改為大寫
-lower() : 將所有字母改為小寫
-capitalize() : 將字串中的第一個字母大寫，其餘小寫
-title() : 將每組單詞(空格區分)的第一個字母大寫，其餘小寫
+```
+- [Remove all characters other than alphabets from string - GeeksforGeeks](https://www.geeksforgeeks.org/remove-characters-alphabets-string/?source=post_page-----a067e7efe472---------------------------------------)
 
-iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天
-iT 邦幫忙是 IT 領域的技術問答與分享社群，透過 IT 人互相幫忙，一起解決每天面臨的靠北時刻。一起來當 IT 人的超級英雄吧，拯救下一個卡關的 IT 人ithelp.ithome.com.tw
-ignores all non-alphanumeric characters
+### 字串處理 lower() upper() capitalize() title()
+- upper() : 將所有字母改為大寫
+- lower() : 將所有字母改為小寫
+- capitalize() : 將字串中的第一個字母大寫，其餘小寫
+- title() : 將每組單詞(空格區分)的第一個字母大寫，其餘小寫
+
+- [iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/m/articles/10269203?source=post_page-----a067e7efe472---------------------------------------)
+
+### ignores all non-alphanumeric characters
+```python
 # neetcode-Is Palindrome
 def removeNonAlpha(self, s: str) -> str:
         t = ''
@@ -804,13 +650,19 @@ def removeNonAlpha(self, s: str) -> str:
             if (i >= 'A' and i <= 'Z') or (i >= 'a' and i <= 'z') or (i >= '0' and i <= '9'):
                 t = t + i
         return t
-Linked List
-Python Linked List - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-確認是否已經到linked list的尾巴
+```
+
+### Linked List
+- [Python Linked List - GeeksforGeeks](https://www.geeksforgeeks.org/python-linked-list/?source=post_page-----a067e7efe472---------------------------------------)
+
+#### 確認是否已經到linked list的尾巴
+```python
 while list1 != None and list2 != None #尾巴不是node，單純是None
-sort()
-Sorting List of Tuples by a Specific Element
+```
+
+### sort()
+#### Sorting List of Tuples by a Specific Element
+```python
 # Original list of tuples
 people = [("Alice", 25), ("Bob", 30), ("Charlie", 22), ("David", 28)]
  
@@ -819,12 +671,17 @@ people.sort(key=lambda x: x[1])
  
 # Displaying the sorted list
 print("Sorted by Age:", people)
-sort() in Python - GeeksforGeeks
-A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and…www.geeksforgeeks.org
-Tuples
+```
+- [sort() in Python - GeeksforGeeks](https://www.geeksforgeeks.org/sort-in-python/?source=post_page-----a067e7efe472---------------------------------------)
+
+### Tuples
 元組（tuple）是 Python 中的一種數據結構，它類似於列表，但有一些重要的區別。元組是不可變的，這意味著一旦創建，元組的元素就不能被修改、添加或刪除。
-元組的特點
-不可變：元組一旦創建，其中的元素就不能改變。
-有序：元組中的元素按它們被添加的順序存儲。
-可包含多種類型的元素：元組可以包含不同類型的數據，例如整數、浮點數、字符串、列表甚至其他元組。
-使用圓括號表示：元組用圓括號 () 表示，而列表用方括號 [] 表示。
+
+#### 元組的特點
+1. 不可變：元組一旦創建，其中的元素就不能改變。
+2. 有序：元組中的元素按它們被添加的順序存儲。
+3. 可包含多種類型的元素：元組可以包含不同類型的數據，例如整數、浮點數、字符串、列表甚至其他元組。
+4. 使用圓括號表示：元組用圓括號 () 表示，而列表用方括號 [] 表示。
+
+## References
+- Reference from my own artical on medium: [Python基礎語法](https://medium.com/@LiuIan/python%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95-a067e7efe472)
