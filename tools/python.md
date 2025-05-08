@@ -2,12 +2,12 @@
 layout: default
 title: Python
 ---
-# Fiona
+# python
+
+## Fiona
 - Deal with large size geo files
 - Fiona streams simple feature data to and from GIS formats like GeoPackage and Shapefile.
 - [Fiona website](https://fiona.readthedocs.io/en/stable/README.html)
-
-# python
 
 ## How variables handle mutable objects (like `lists`, `dicts`, and `DataFrames`) in Python
 
@@ -325,9 +325,9 @@ for file_name in os.listdir(input_dir):
 
 By organizing your code in this way, you can maintain a clean separation of concerns while making it easy to process multiple files efficiently.
 
-# shpaely
+## shpaely
 
-## geometry.coords
+### geometry.coords
 The `geometry.coords` attribute provides direct access to the coordinate sequence of a Shapely geometry, such as a `LineString` or `Point`. It returns the actual points (as a list of `(x, y)` tuples) that define the geometry's shape.
 
 For example:
@@ -338,7 +338,7 @@ For example:
 
 In short, `geometry.coords` is used to get all points for simpler geometries, but for polygons, it’s often necessary to use `exterior.coords` or work with each part individually in multi-part geometries.
 
-## geometry.geoms
+### geometry.geoms
 - In Shapely, a MultiPolygon is accessed via its `.geoms` attribute, which provides an iterable of the individual Polygon components. 
 - `geometry` -> `goemetry.geoms`
 - reference: [shapely Geometry](https://shapely.readthedocs.io/en/2.0.3/geometry.html)
