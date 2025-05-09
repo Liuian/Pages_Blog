@@ -1,6 +1,10 @@
 # Welcome to Ian's Blog
+This is where I share tools, notes, and thoughts as I learn and build.
 
 ## Tools
+<details>
+<summary>Tools (tap to expand/collapse)</summary>
+
 - Python Code
     - [whisper_audio_to_txt](https://liuian.github.io/pages-blog/tools/python_code/whisper_audio_to_txt)
 - [autohotkey](https://liuian.github.io/pages-blog/tools/autohotkey)
@@ -18,12 +22,22 @@
 - [redmine](https://liuian.github.io/pages-blog/tools/redmine)
 - [vscode](https://liuian.github.io/pages-blog/tools/vscode)
 - [wins](https://liuian.github.io/pages-blog/tools/wins)
+</details>
+
 
 ## Notes
+<details>
+<summary>Notes (tap to expand/collapse)</summary>
+
 - [depth_first_search_in_python](https://liuian.github.io/pages-blog/notes/depth_first_search_in_python)
 - [time_complexity](https://liuian.github.io/pages-blog/notes/time_complexity)
+</details>
 
 ## Blog
+<details>
+<summary>Blog (tap to expand/collapse)</summary>
+
 - [Sleep 1](https://liuian.github.io/pages-blog/blog/sleep-1)
 - [Sleep 2](https://liuian.github.io/pages-blog/blog/sleep-2)
 - [Sleep 3](https://liuian.github.io/pages-blog/blog/sleep-3)
+</details>
