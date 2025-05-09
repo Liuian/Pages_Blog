@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Jump to top 功能
     const toTopBtn = document.createElement("button");
-    // toTopBtn.textContent = " ⬆ ";
-    toTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';  // 用 Font Awesome 的 icon
+    toTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
     toTopBtn.className = "jump-top-btn";
     document.body.appendChild(toTopBtn);
     toTopBtn.addEventListener("click", function () {
