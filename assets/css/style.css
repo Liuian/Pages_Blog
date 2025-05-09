@@ -220,12 +220,6 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     background: var(--accent-color);
 }
 
-/* sidbar - tocbot.min.js */    /* 目前章節高亮 */
-/* .is-active-link {   
-    font-weight: bold;
-    color: var(--accent-color);
-} */
-
 /* Responsive */
 @media (max-width: 768px) { 
     .container {
