@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../webfonts/fa-solid-900.woff2') format('woff2'),
+         url('../webfonts/fa-solid-900.woff') format('woff');
+  }
+  
+  .fas {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+  }
+  
+  .fa-home:before {
+    content: "\f015";
+  }
+  
+  .fa-tools:before {
+    content: "\f7d9";
+  }
+  
+  .fa-sticky-note:before {
+    content: "\f249";
+  }
+  
+  .fa-pen-nib:before {
+    content: "\f5ad";
+  }
+  
+  .fa-info-circle:before {
+    content: "\f05a";
+  }
+  
+  .fa-arrow-up:before {
+    content: "\f062";
+  }
+  

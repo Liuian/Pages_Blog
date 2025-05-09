@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> <!-- Jekyll CSS -->
         <link rel="stylesheet" href="{{ '/assets/css/tocbot.css' | relative_url }}">
         <link rel="stylesheet" href="{{ '/assets/css/rouge.css' | relative_url }}"> <!-- Rouge CSS - highlight code -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    <!-- Font-Awesome - icon -->
+        <link rel="stylesheet" href="{{ '/assets/css/font-awesome.css' | relative_url }}"> <!-- Font-Awesome - icon -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    Font-Awesome - icon -->
 
         {% seo %} <!-- jekyll-seo-tag plugin -->
     </head>
@@ -23,15 +24,13 @@
                 <a href="/pages-blog/about/"><i class="fas fa-info-circle"></i> About</a>
             </div>
         </nav>
-
         <div class="container">
             <div class="sidebar-wrapper">
                 <nav class="sidebar js-toc"></nav>
             </div>
             <main class="content js-toc-content">{{ content }}</main>   <!-- 內容區塊 -->
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>   <!-- TOC Script -->
         <script src="{{ '/assets/js/main.js' | relative_url }}"></script>   <!-- custom script -->
+        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>   <!-- TOC Script -->
     </body>
 </html>
