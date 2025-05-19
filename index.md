@@ -8,7 +8,7 @@ title: Home
 
 <h2>Tools</h2>
 <details>
-  <summary><i class="fas fa-caret-down"></i>Posts</summary>
+  <summary>Posts</summary>
   <ul>
     <li>Python Code
         <ul>
@@ -35,7 +35,7 @@ title: Home
 
 <h2>Notes</h2>
 <details>
-  <summary><i class="fas fa-caret-down"></i>Posts</summary>
+  <summary>Posts</summary>
   <ul>
     <li><a href="https://liuian.github.io/pages-blog/notes/depth_first_search_in_python">depth_first_search_in_python</a></li>
     <li><a href="https://liuian.github.io/pages-blog/notes/time_complexity">time_complexity</a></li>
@@ -44,10 +44,10 @@ title: Home
 
 <h2><i class="fas fa-pen-nib"></i> Blog</h2>
 <details>
-  <summary><i class="fas fa-caret-down"></i>Posts</summary>
+  <summary>Posts</summary>
   <ul>
-    <li><a href="https://liuian.github.io/pages-blog/blog/sleep-1">Sleep 1</a></li>
-    <li><a href="https://liuian.github.io/pages-blog/blog/sleep-2">Sleep 2</a></li>
-    <li><a href="https://liuian.github.io/pages-blog/blog/sleep-3">Sleep 3</a></li>
+    <li><a href="/pages-blog/blog/sleep-1">Sleep 1</a></li>
+    <li><a href="/pages-blog/blog/sleep-2">Sleep 2</a></li>
+    <li><a href="/pages-blog/blog/sleep-3">Sleep 3</a></li>
   </ul>
 </details>
