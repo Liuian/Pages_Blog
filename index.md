@@ -30,6 +30,12 @@ This is where I share tools, notes, and thoughts as I learn and build.
 - [time_complexity](https://liuian.github.io/pages-blog/notes/time_complexity)
 
 ## Blog
+
+<details>
+<summary><strong>🖊 Blog</strong></summary>
+
 - [Sleep 1](https://liuian.github.io/pages-blog/blog/sleep-1)
 - [Sleep 2](https://liuian.github.io/pages-blog/blog/sleep-2)
 - [Sleep 3](https://liuian.github.io/pages-blog/blog/sleep-3)
+
+</details>
