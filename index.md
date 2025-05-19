@@ -33,14 +33,11 @@ This is where I share tools, notes, and thoughts as I learn and build.
 
 <details>
 <summary><i class="fas fa-pen-nib"></i> Blog</summary>
-<br>
 
-- [Sleep 1](https://liuian.github.io/pages-blog/blog/sleep-1)  
-<br>
-
-- [Sleep 2](https://liuian.github.io/pages-blog/blog/sleep-2)  
-<br>
-
-- [Sleep 3](https://liuian.github.io/pages-blog/blog/sleep-3)  
+<ul>
+  <li><a href="https://liuian.github.io/pages-blog/blog/sleep-1">Sleep 1</a></li>
+  <li><a href="https://liuian.github.io/pages-blog/blog/sleep-2">Sleep 2</a></li>
+  <li><a href="https://liuian.github.io/pages-blog/blog/sleep-3">Sleep 3</a></li>
+</ul>
 
 </details>
