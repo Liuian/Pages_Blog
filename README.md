@@ -30,8 +30,8 @@ This is where I share tools, notes, and thoughts as I learn and build.
 
 <summary><strong>🖊 Blog</strong></summary>
 
-    - [Sleep 1](https://liuian.github.io/pages-blog/blog/sleep-1)
-    - [Sleep 2](https://liuian.github.io/pages-blog/blog/sleep-2)
-    - [Sleep 3](https://liuian.github.io/pages-blog/blog/sleep-3)
+  - [Sleep 1](https://liuian.github.io/pages-blog/blog/sleep-1)
+  - [Sleep 2](https://liuian.github.io/pages-blog/blog/sleep-2)
+  - [Sleep 3](https://liuian.github.io/pages-blog/blog/sleep-3)
 
 </details>
