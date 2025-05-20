@@ -1,7 +1,7 @@
-<h1>Welcome to Ian's Blog</h1>
+# Welcome to Ian's Blog
 <p>This is where I share tools, notes, and thoughts as I learn and build.</p>
 
-<h2>Tools</h2>
+## Tools
 <details>
   <summary>Posts</summary>
   <ul>
@@ -19,6 +19,7 @@
     <li><a href="https://liuian.github.io/pages-blog/tools/github_pages">github pages</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/linux">linux</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/markdown">markdown</a></li>
+    <li><a href="https://liuian.github.io/pages-blog/tools/marp">marp</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/miniconda">miniconda</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/notes">notes</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/python">python</a></li>
