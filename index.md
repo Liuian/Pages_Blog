@@ -4,7 +4,7 @@ title: Home
 ---
 
 # Welcome to Ian's Blog
-<p>This is where I share tools, notes, and thoughts as I learn and build.</p>
+This is where I share tools, notes, and thoughts as I learn and build.
 
 ## Tools
 <details>
@@ -34,7 +34,7 @@ title: Home
   </ul>
 </details>
 
-<h2>Notes</h2>
+## Notes
 <details>
   <summary>Posts</summary>
   <ul>
@@ -43,7 +43,7 @@ title: Home
   </ul>
 </details>
 
-<h2>Blog</h2>
+## Blog
 <details>
   <summary>Posts</summary>
   <ul>
