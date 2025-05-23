@@ -37,18 +37,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const langSelect = document.getElementById('language-select');
         // Redirect on language change
     langSelect.addEventListener('change', function () {
-    const currentPath = window.location.pathname; // e.g. /pages-blog/en/tools/autohotkey
-    const newLang = this.value.replace(/\//g, ''); // e.g. "zh" from "/zh/"   
+        const currentPath = window.location.pathname; // e.g. /pages-blog/en/tools/autohotkey
+        const newLang = this.value.replace(/\//g, ''); // e.g. "zh" from "/zh/"   
         // 替換語言碼
-        const newPath = currentPath.replace(/\/(en|zh|nl|de)\//, `/${newLang}/`);
+        const newPath = currentPath.replace(/\/(en|zh|nl|de)\//, `/pages-blog/${newLang}/`);
         // 導向新路徑
             window.location.pathname = newPath;
-        });
+    });
         // Auto-select current language in dropdown
     const path = window.location.pathname;
-    if (path.includes("/zh/")) langSelect.value = "/zh/";
-    else if (path.includes("/nl/")) langSelect.value = "/nl/";
-    else if (path.includes("/de/")) langSelect.value = "/de/";
+    if (path.includes("/pages-blog/zh/")) langSelect.value = "/zh/";
+    else if (path.includes("/pages-blog/nl/")) langSelect.value = "/nl/";
+    else if (path.includes("/pages-blog/de/")) langSelect.value = "/de/";
     else langSelect.value = "/en/";
 
 
