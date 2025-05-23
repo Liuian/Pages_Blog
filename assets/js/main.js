@@ -34,10 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // 語言切換
+    const basePath = "/pages-blog";
     const langSelect = document.getElementById('language-select');
         // Redirect on language change
     langSelect.addEventListener('change', function () {
-        const selectedLangUrl = this.value;
+        const selectedLangUrl = basePath + this.value;
         window.location.href = selectedLangUrl;
     });
         // Auto-select the current language based on URL
