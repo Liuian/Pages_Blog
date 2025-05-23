@@ -106,3 +106,7 @@ title: Wins
 - `comparision criteria` choose `File size`
 - `sychronize options` choose `preview changes`
 - ![alt text](../assets/images/tools/winscp-1.png)
+
+
+## Hotkey
+- 螢幕錄影: `win + alt + R`

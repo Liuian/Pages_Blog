@@ -7,7 +7,7 @@ This is where I share tools, notes, and thoughts as I learn and build.
   <ul>
     <li>Python Code
         <ul>
-        <li><a href="https://liuian.github.io/pages-blog/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
+          <li></li>
         </ul>
     </li>
     <li><a href="https://liuian.github.io/pages-blog/tools/autohotkey">autohotkey</a></li>
@@ -25,6 +25,7 @@ This is where I share tools, notes, and thoughts as I learn and build.
     <li><a href="https://liuian.github.io/pages-blog/tools/python">python</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/redmine">redmine</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/vscode">vscode</a></li>
+    <li><a href="https://liuian.github.io/pages-blog/tools/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/wins">wins</a></li>
   </ul>
 </details>
