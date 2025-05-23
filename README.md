@@ -5,18 +5,18 @@ This is where I share tools, notes, and thoughts as I learn and build.
 Here you'll find a collection of practical tools and scripts related to programming, data processing, automation, and more. Each post is designed to be concise and useful, helping you work smarter with real-world examples.
 <details>
   <summary>Posts</summary>
+    <!-- <li> -->
+    <details>
+      <summary>Python Code</summary>
+      <ul>
+        <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/find_large_file">find_large_file</a></li>
+        <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></li>
+        <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/paysdesfees">paysdesfees</a></li>
+        <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
+      </ul>
+    </details>
+    <!-- </li> -->
   <ul>
-    <li>
-      <details>
-        <summary>Python Code</summary>
-        <ul>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/find_large_file">find_large_file</a></li>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></li>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/paysdesfees">paysdesfees</a></li>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
-        </ul>
-      </details>
-    </li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/autohotkey">autohotkey</a> - Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/docker">docker</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/excel">excel</a></li>
