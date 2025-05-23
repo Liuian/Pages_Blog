@@ -34,17 +34,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // 語言切換
-    const basePath = "/pages-blog";
     const langSelect = document.getElementById('language-select');
         // Redirect on language change
     langSelect.addEventListener('change', function () {
-        const selectedLangUrl = basePath + this.value;
-        window.location.href = selectedLangUrl;
-    });
-        // Auto-select the current language based on URL
+    const currentPath = window.location.pathname; // e.g. /pages-blog/en/tools/autohotkey
+    const newLang = this.value.replace(/\//g, ''); // e.g. "zh" from "/zh/"   
+        // 替換語言碼
+        const newPath = currentPath.replace(/\/(en|zh|nl|de)\//, `/${newLang}/`);
+        // 導向新路徑
+            window.location.pathname = newPath;
+        });
+        // Auto-select current language in dropdown
     const path = window.location.pathname;
-    if (path.startsWith("/zh/")) langSelect.value = "/zh/";
-    else if (path.startsWith("/nl/")) langSelect.value = "/nl/";
-    else if (path.startsWith("/de/")) langSelect.value = "/de/";
+    if (path.includes("/zh/")) langSelect.value = "/zh/";
+    else if (path.includes("/nl/")) langSelect.value = "/nl/";
+    else if (path.includes("/de/")) langSelect.value = "/de/";
     else langSelect.value = "/en/";
+
+
+    // const basePath = "/pages-blog";
+    // const langSelect = document.getElementById('language-select');
+    //     // Redirect on language change
+    // langSelect.addEventListener('change', function () {
+    //     const selectedLangUrl = basePath + this.value;
+    //     window.location.href = selectedLangUrl;
+    // });
+    //     // Auto-select the current language based on URL
+    // const path = window.location.pathname;
+    // if (path.startsWith("/zh/")) langSelect.value = "/zh/";
+    // else if (path.startsWith("/nl/")) langSelect.value = "/nl/";
+    // else if (path.startsWith("/de/")) langSelect.value = "/de/";
+    // else langSelect.value = "/en/";
 });

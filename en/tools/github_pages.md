@@ -664,5 +664,5 @@ git push origin main --force
 ### TODO
 - Table of contents 可自由滑動
 - 中英文切換
-- 亮暗色系切換
 - 手機板瀏覽
+- ~~亮暗色系切換~~
