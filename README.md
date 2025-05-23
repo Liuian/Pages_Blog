@@ -5,13 +5,16 @@ This is where I share tools, notes, and thoughts as I learn and build.
 <details>
   <summary>Posts</summary>
   <ul>
-    <li>Python Code
+    <li>
+      <details>
+        <summary>Python Code</summary>
         <ul>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/find_large_file">find_large_filefind_large_file</a></li>
+          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/find_large_file">find_large_file</a></li>
           <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></li>
           <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/paysdesfees">paysdesfees</a></li>
           <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
         </ul>
+      </details>
     </li>
     <li><a href="https://liuian.github.io/pages-blog/tools/autohotkey">autohotkey</a></li>
     <li><a href="https://liuian.github.io/pages-blog/tools/docker">docker</a></li>
