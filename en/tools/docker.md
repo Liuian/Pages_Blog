@@ -3,11 +3,11 @@
 - [Install Docker Desktop on Mac](https://docs.docker.com/desktop/setup/install/mac-install/#install-interactively)
 
 ## 2. 開啟Docker軟體，登入後確認記憶體是否有開到4GB以上
-- ![image](../assets/images/tools/docker4.jpg)
+- ![image](/pages-blog/assets/images/tools/docker4.jpg)
 
 ## 3. Termial 下載MSSQL映像檔
 `sudo docker pull mcr.microsoft.com/mssql/server:2022-latest`
-- ![image](../assets/images/tools/docker3.jpg)
+- ![image](/pages-blog/assets/images/tools/docker3.jpg)
 
 ## 4. 啟動Linux container image
 ``` bash
@@ -17,14 +17,14 @@ sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong@Passw0rd>" 
    mcr.microsoft.com/mssql/server:2022-latest
 ```
 完成後會在continers欄位看到"sql1"
-- ![image](../assets/images/tools/docker2.jpg)
+- ![image](/pages-blog/assets/images/tools/docker2.jpg)
 
 ## 5. 確認安裝成功
 ```bash
 sudo docker ps -a
 ```
 
-- ![image](../assets/images/tools/docker1.jpg)
+- ![image](/pages-blog/assets/images/tools/docker1.jpg)
 
 ## 6. 更改密碼
 ```bash
