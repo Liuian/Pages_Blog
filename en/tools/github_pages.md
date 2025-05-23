@@ -642,3 +642,27 @@ TODO
 git commit --amend --no-edit
 git push origin main --force
 ```
+
+## 所有事項checklist
+### 已完成
+- 主頁
+  - commit 連結 gtihub readme.md & web index.md - `.githooks/pre-commit`
+  - 主頁文章列可收合/展開
+- Table of contents
+  - (tocbot.css)
+  - 左側list
+  - 展開/收合 按鈕
+- Navbar
+  - home/tools/blogs/notes/about 按鈕
+- 外觀
+  - 主視覺顏色
+  - 行巨
+  - 字體
+  - icon - (rouge.css)
+- jump to top button
+
+### TODO
+- Table of contents 可自由滑動
+- 中英文切換
+- 亮暗色系切換
+- 手機板瀏覽
