@@ -34,35 +34,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // 語言切換
-    const langSelect = document.getElementById('language-select');
-        // Redirect on language change
-    langSelect.addEventListener('change', function () {
-        const currentPath = window.location.pathname; // e.g. /pages-blog/en/tools/autohotkey
-        const newLang = this.value.replace(/\//g, ''); // e.g. "zh" from "/zh/"   
-        // 替換語言碼
-        const newPath = currentPath.replace(/\/pages-blog\/(en|zh|nl|de)\//, `/pages-blog/${newLang}/`);
-        // 導向新路徑
-            window.location.pathname = newPath;
-    });
-        // Auto-select current language in dropdown
-    const path = window.location.pathname;
-    if (path.includes("/pages-blog/zh/")) langSelect.value = "/zh/";
-    else if (path.includes("/pages-blog/nl/")) langSelect.value = "/nl/";
-    else if (path.includes("/pages-blog/de/")) langSelect.value = "/de/";
-    else langSelect.value = "/en/";
-
-
-    // const basePath = "/pages-blog";
     // const langSelect = document.getElementById('language-select');
     //     // Redirect on language change
     // langSelect.addEventListener('change', function () {
-    //     const selectedLangUrl = basePath + this.value;
-    //     window.location.href = selectedLangUrl;
+    //     const currentPath = window.location.pathname; // e.g. /pages-blog/en/tools/autohotkey
+    //     const newLang = this.value.replace(/\//g, ''); // e.g. "zh" from "/zh/"   
+    //     const newPath = currentPath.replace(/\/pages-blog\/(en|zh|nl|de)\//, `/pages-blog/${newLang}/`); // 替換語言碼
+    //     window.location.pathname = newPath; // 導向新路徑
     // });
-    //     // Auto-select the current language based on URL
+    //     // Auto-select current language in dropdown
     // const path = window.location.pathname;
-    // if (path.startsWith("/zh/")) langSelect.value = "/zh/";
-    // else if (path.startsWith("/nl/")) langSelect.value = "/nl/";
-    // else if (path.startsWith("/de/")) langSelect.value = "/de/";
+    // if (path.includes("/pages-blog/zh/")) langSelect.value = "/zh/";
+    // else if (path.includes("/pages-blog/nl/")) langSelect.value = "/nl/";
+    // else if (path.includes("/pages-blog/de/")) langSelect.value = "/de/";
     // else langSelect.value = "/en/";
+
+    // 偵測當前語言碼
+    const langMatch = window.location.pathname.match(/\/pages-blog\/(en|zh|nl|de)\//);
+    const lang = langMatch ? langMatch[1] : "en"; // 預設語言為英文
+
+    // 動態更新連結
+    document.getElementById("home-link").href  = `/pages-blog/${lang}/`;
+    document.getElementById("tools-link").href = `/pages-blog/${lang}/tools/`;
+    document.getElementById("notes-link").href = `/pages-blog/${lang}/notes/`;
+    document.getElementById("blog-link").href  = `/pages-blog/${lang}/blog/`;
+    document.getElementById("about-link").href = `/pages-blog/${lang}/about`;
+
+    // 語言選單初始化
+    const langSelect = document.getElementById('language-select');
+    langSelect.value = `/${lang}/`;
+
+    // 語言變更時切換網址
+    langSelect.addEventListener('change', function () {
+        const selectedLang = this.value.replace(/\//g, ''); // e.g. "zh"
+        const currentPath = window.location.pathname;
+
+        // 替換語言碼並導向
+        const newPath = currentPath.replace(/\/pages-blog\/(en|zh|nl|de)\//, `/pages-blog/${selectedLang}/`);
+        window.location.pathname = newPath;
+    });
 });
