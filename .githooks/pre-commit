@@ -10,4 +10,4 @@ echo "" >> en/index.md
 
 cat README.md >> en/index.md
 
-echo "[pre-commit] index.md has been updated from README.md"
+echo "[pre-commit] en/index.md has been updated from README.md"

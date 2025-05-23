@@ -654,6 +654,7 @@ git push origin main --force
   - 展開/收合 按鈕
 - Navbar
   - home/tools/blogs/notes/about 按鈕
+  - 中英文切換 (切換button, 換語言時換到對應的頁面, image路徑)
 - 外觀
   - 主視覺顏色
   - 行巨
@@ -663,6 +664,5 @@ git push origin main --force
 
 ### TODO
 - Table of contents 可自由滑動
-- 中英文切換
 - 手機板瀏覽
 - ~~亮暗色系切換~~
