@@ -159,6 +159,24 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     background-color: var(--accent-color);
 }
 
+/* test */
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-left: auto;
+}
+
+.navbar-controls button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    color: inherit;
+}
+/* test */
+
 /* sidebar - default.html */
 .container {
   display: flex;
