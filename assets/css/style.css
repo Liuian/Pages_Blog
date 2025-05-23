@@ -189,29 +189,6 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     background-color: var(--accent-color);
 }
 
-/* test */
-.select-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.select-wrapper select {
-    padding-right: 1.5em; /* 為 caret 預留空間 */
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.select-wrapper i {
-    position: absolute;
-    right: 0.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none; /* 不阻擋點擊選單 */
-    color: var(--background-color);
-}
-/* test */
-
 /* sidebar - default.html */
 .container {
   display: flex;

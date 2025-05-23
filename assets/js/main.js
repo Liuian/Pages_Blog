@@ -33,22 +33,17 @@ document.addEventListener("DOMContentLoaded", function () {
         else {toTopBtn.style.display = "none";}
     });
 
-    // test
     // 語言切換
     const langSelect = document.getElementById('language-select');
-    
-    // Redirect on language change
+        // Redirect on language change
     langSelect.addEventListener('change', function () {
         const selectedLangUrl = this.value;
         window.location.href = selectedLangUrl;
     });
-    
-    // Auto-select the current language based on URL
+        // Auto-select the current language based on URL
     const path = window.location.pathname;
     if (path.startsWith("/zh/")) langSelect.value = "/zh/";
     else if (path.startsWith("/nl/")) langSelect.value = "/nl/";
     else if (path.startsWith("/de/")) langSelect.value = "/de/";
     else langSelect.value = "/en/";
-    // test
-
 });
