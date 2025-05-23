@@ -167,7 +167,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     margin-left: auto;
 }
 
-.navbar-controls button {
+.navbar-controls select{
     text-decoration: none;
     color: var(--background-color);
     background-color: var(--primary-color);
@@ -181,7 +181,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-family: "Segoe UI", 'Arial', sans-serif;
 }
 
-.navbar-controls button:hover {
+.navbar-controls select:hover {
     background-color: var(--accent-color);
 }
 /* test */
