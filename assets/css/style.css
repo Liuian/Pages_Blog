@@ -168,12 +168,21 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 }
 
 .navbar-controls button {
-    background: none;
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    transition: background-color 0.3s;
     border: none;
     font-size: 1em;
     cursor: pointer;
-    padding: 0.25em 0.5em;
-    color: inherit;
+    font-family: "Segoe UI", 'Arial', sans-serif;
+}
+
+.navbar-controls button:hover {
+    background-color: var(--accent-color);
 }
 /* test */
 
