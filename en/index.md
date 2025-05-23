@@ -7,6 +7,7 @@ title: Home
 This is where I share tools, notes, and thoughts as I learn and build.
 
 ## Tools
+Here you'll find a collection of practical tools and scripts related to programming, data processing, automation, and more. Each post is designed to be concise and useful, helping you work smarter with real-world examples.
 <details>
   <summary>Posts</summary>
   <ul>
@@ -42,6 +43,7 @@ This is where I share tools, notes, and thoughts as I learn and build.
 </details>
 
 ## Notes
+This section gathers learning notes and insights from my studies and technical exploration. It covers a wide range of topics and aims to serve as a helpful reference for anyone diving into similar areas.
 <details>
   <summary>Posts</summary>
   <ul>
@@ -51,6 +53,7 @@ This is where I share tools, notes, and thoughts as I learn and build.
 </details>
 
 ## Blog
+In the blog, I share personal thoughts, experiences, and reflections—ranging from tech-related ideas to observations from daily life. It's a space where I explore, document, and connect.
 <details>
   <summary>Posts</summary>
   <ul>
