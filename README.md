@@ -7,10 +7,10 @@ This is where I share tools, notes, and thoughts as I learn and build.
   <ul>
     <li>Python Code
         <ul>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/find_large_file"></a>find_large_filefind_large_file</li>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/merge_jpgs_pdfs"></a>merge_jpgs_pdfs</li>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/paysdesfees"></a>paysdesfees</li>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/whisper_audio_to_txt"></a>whisper_audio_to_txt</li>
+          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/find_large_file">find_large_filefind_large_file</a></li>
+          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></li>
+          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/paysdesfees">paysdesfees</a></li>
+          <li><a href="https://github.com/Liuian/pages-blog/tree/main/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
         </ul>
     </li>
     <li><a href="https://liuian.github.io/pages-blog/tools/autohotkey">autohotkey</a></li>
