@@ -165,6 +165,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     align-items: center;
     gap: 0.5em;
     margin-left: auto;
+    padding-right: 1rem; /* 增加右側間距 */
 }
 
 .navbar-controls select{
