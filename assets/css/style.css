@@ -165,7 +165,6 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     align-items: center;
     gap: 0.5em;
     margin-left: auto;
-    padding-right: 1rem; /* 增加右側間距 */
 }
 
 .navbar-controls select{
@@ -180,6 +179,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-size: 1em;
     cursor: pointer;
     font-family: "Segoe UI", 'Arial', sans-serif;
+    margin-right: 1rem; /* ✅ 調整按鈕本身與右側的距離 */
 }
 
 .navbar-controls select:hover {
