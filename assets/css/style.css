@@ -171,7 +171,6 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-
     text-decoration: none;
     color: var(--background-color);
     background-color: var(--primary-color);
@@ -183,6 +182,8 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-size: 1em;
     cursor: pointer;
     font-family: "Segoe UI", 'Arial', sans-serif;
+    text-align: center;          /* 文字置中 */
+    text-align-last: center;     /* 最後一行文字（選項顯示區）置中，針對部分瀏覽器 */
 }
 
 .navbar-controls select:hover {
