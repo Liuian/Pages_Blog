@@ -21,10 +21,7 @@ This is where I share tools, notes, and thoughts as I learn and build.
         </ul>
       </details>
     </li>
-    <li>
-      <a href="https://liuian.github.io/pages-blog/en/tools/autohotkey">autohotkey</a>
-        <p>Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</p>
-    </li>
+    <li><a href="https://liuian.github.io/pages-blog/en/tools/autohotkey">autohotkey</a> - Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/docker">docker</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/excel">excel</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/flowchart">flowchart</a></li>
