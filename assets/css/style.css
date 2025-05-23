@@ -165,9 +165,14 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     align-items: center;
     gap: 0.5em;
     margin-left: auto;
+    padding-right: 1.5rem; /* ✅ 讓整組靠右但和邊界留空 */
 }
 
 .navbar-controls select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
     text-decoration: none;
     color: var(--background-color);
     background-color: var(--primary-color);
@@ -179,7 +184,6 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     font-size: 1em;
     cursor: pointer;
     font-family: "Segoe UI", 'Arial', sans-serif;
-    margin-right: 1rem; /* ✅ 調整按鈕本身與右側的距離 */
 }
 
 .navbar-controls select:hover {
