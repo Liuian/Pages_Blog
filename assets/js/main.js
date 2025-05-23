@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentPath = window.location.pathname; // e.g. /pages-blog/en/tools/autohotkey
         const newLang = this.value.replace(/\//g, ''); // e.g. "zh" from "/zh/"   
         // 替換語言碼
-        const newPath = currentPath.replace(/\/(en|zh|nl|de)\//, `/pages-blog/${newLang}/`);
+        const newPath = currentPath.replace(/\/pages-blog\/(en|zh|nl|de)\//, `/pages-blog/${newLang}/`);
         // 導向新路徑
             window.location.pathname = newPath;
     });
