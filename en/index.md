@@ -29,6 +29,7 @@ Here you'll find a collection of practical tools and scripts related to programm
     <li><a href="https://liuian.github.io/pages-blog/en/tools/gis_qgis_overpass">gis_qgis_overpass</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/git">git</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/github_pages">github pages</a></li>
+    <li><a href="https://liuian.github.io/pages-blog/en/tools/google_drive_desktop">google drive desktop</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/linux">linux</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/markdown">markdown</a></li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/marp">marp</a></li>
