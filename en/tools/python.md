@@ -256,6 +256,40 @@ In summary:
 Because Python doesn’t automatically link a new assignment (like `gdf_update = ...`) to other variables that previously referred to the same object. After reassigning `gdf_update`, only `gdf_update` refers to the filtered DataFrame, while `gdf` remains as it was.
 
 This distinction allows you to freely modify subsets of your data (as `gdf_update`) without impacting the original data (in `gdf`).
+
+### Question 3
+> Why do we not need to return `path` in the following uscase? (DFS with Path Tracking -- NeedCode: Lowest Common Ancestor in Binary Search Tree)
+```python
+def find_path(node, target, path):
+    if not node:
+        return False
+
+    path.append(node)  # <- modifies the shared list
+
+    if node == target:
+        return True
+
+    if find_path(node.left, target, path) or find_path(node.right, target, path):
+        return True
+
+    path.pop()  # <- backtrack
+    return False
+```
+
+### Answer 3
+> `Lists` are `mutable` in Python. `Mutablility` means the function can modify the original list directly, and those changes will persist ouside the function.
+
+- Example: `my_list` is modified inside `add_items()` because lists are mutable.
+    ```python
+    def add_items(lst):
+        lst.append(1)
+        lst.append(2)
+
+    my_list = []
+    add_items(my_list)
+    print(my_list)  # Output: [1, 2]
+    ```
+
 ## steps to set up a system for processing multiple GeoJSON files using two separate Python files:
 ### 1. **Create `main_process.py`**
    - **Purpose**: Contains the core logic to process a single GeoJSON file.

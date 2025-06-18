@@ -652,7 +652,6 @@ git push origin main --force
   - (tocbot.css)
   - 左側list
   - 展開/收合 按鈕
-- Navbar
   - home/tools/blogs/notes/about 按鈕
   - 中英文切換 (切換button, 換語言時換到對應的頁面, image路徑)
 - 外觀
