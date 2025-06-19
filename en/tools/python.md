@@ -4,6 +4,94 @@ title: Python
 ---
 # python
 
+## Outline
+
+<details>
+<summary>1. <a href="#1-fiona-and-gis-data-handling">Fiona and GIS Data Handling</a></summary>
+
+- Introduction to Fiona  
+- Streaming GIS data formats (GeoPackage, Shapefile)  
+- Fiona official documentation  
+
+</details>
+
+<details>
+<summary>2. <a href="#2-python-variables-and-mutable-objects">Python Variables and Mutable Objects</a></summary>
+
+- Variable Assignment and References  
+- Mutable vs Immutable Objects  
+- Passing Mutable Objects to Functions  
+- Creating Copies to Prevent Side Effects  
+- Deep Copy vs Shallow Copy  
+- GeoDataFrame Example: Copy vs Reference  
+
+</details>
+
+<details>
+<summary>3. <a href="#3-python-variable-assignment-and-reassignment">Python Variable Assignment and Reassignment</a></summary>
+
+- Why reassignment creates new references  
+- Example: Filtering DataFrame and variable reassignment  
+
+</details>
+
+<details>
+<summary>4. <a href="#4-dfs-example-mutable-list-passed-to-function">DFS Example: Mutable List Passed to Function</a></summary>
+
+- Why we do not need to return the path list  
+- Mutability of lists explained with examples  
+
+</details>
+
+<details>
+<summary>5. <a href="#5-multi-file-geojson-processing-setup">Multi-File GeoJSON Processing Setup</a></summary>
+
+- `main_process.py` — Single File Processing  
+- `batch_processor.py` — Batch Processing Script  
+- Summary of running batch processing  
+
+</details>
+
+<details>
+<summary>6. <a href="#6-shapely-geometry-attributes">Shapely Geometry Attributes</a></summary>
+
+- `.coords` attribute and usage  
+- `.geoms` attribute for MultiPolygons  
+
+</details>
+
+<details>
+<summary>7. <a href="#7-python-language-basics-and-constructs">Python Language Basics and Constructs</a></summary>
+
+- For Loops and `range()`  
+- Lists: Length, Indexing, Append, Remove  
+- Checking if List is Empty  
+- List of Objects Example  
+- Useful List Methods: `enumerate()`, `pop()`  
+- Control Flow Keywords: `break`, `continue`, `pass`  
+- Dictionaries, HashMaps, and `get()`  
+- String Manipulation: Removing Spaces, Special Characters, Case Conversion  
+- Tuples: Characteristics and Usage  
+- Sorting Lists and Tuples  
+- Linked Lists: Traversal and Checks  
+
+</details>
+
+<details>
+<summary>8. <a href="#8-python-classes-objects-and-self">Python Classes, Objects, and <code>self</code></a></summary>
+
+- What is a Class?  
+- What is an Object?  
+- The `__init__` Method (Constructor)  
+- Understanding `self`  
+- Typical Class Structure Example  
+- Optional Methods: `__str__`, `@classmethod`, `@staticmethod`  
+- Usage Example: BankAccount Class  
+- FAQ: Can a class work without `__init__`?  
+
+</details>
+
+
 ## Fiona
 - Deal with large size geo files
 - Fiona streams simple feature data to and from GIS formats like GeoPackage and Shapefile.
@@ -377,7 +465,7 @@ In short, `geometry.coords` is used to get all points for simpler geometries, bu
 - `geometry` -> `goemetry.geoms`
 - reference: [shapely Geometry](https://shapely.readthedocs.io/en/2.0.3/geometry.html)
 
-## python basic
+## python language
 ### for loop
 ```python
 sequences = [0, 1, 2, 3, 4, 5]
@@ -716,6 +804,143 @@ print("Sorted by Age:", people)
 2. 有序：元組中的元素按它們被添加的順序存儲。
 3. 可包含多種類型的元素：元組可以包含不同類型的數據，例如整數、浮點數、字符串、列表甚至其他元組。
 4. 使用圓括號表示：元組用圓括號 () 表示，而列表用方括號 [] 表示。
+
+## `Class`, `Object`, and `Self`
+Sure! Here's your updated **complete note**, now including a section about the **typical structure of a Python class**.
+
+### 🧱 What is a **class**?
+* A **class** is a blueprint for creating objects (instances).
+* It defines **attributes** (data) and **methods** (functions) that the objects will have.
+
+### 📦 What is an **object**?
+* An object is an **instance of a class**, with its own separate data.
+* You create objects using: `obj = ClassName(arguments)`
+
+---
+
+### 🔧 `__init__` method (constructor)
+
+* Special method that runs when an object is created.
+* Initializes instance variables using `self`.
+* When you write `self.name = name`, you're storing the value in the object itself.
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# Create a Person object
+p1 = Person("Alice", 25)
+
+# Access its attributes
+print(p1.name)  # Output: Alice
+print(p1.age)   # Output: 25
+```
+
+---
+
+### 🙋‍♀️ What is `self`?
+
+* `self` refers to the **current object (instance)**.
+* It must be the **first parameter** of any instance method.
+* Allows access to that object’s variables and methods.
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name     # instance variable
+        self.age = age       # instance variable
+
+    def greet(self):
+        print(f"Hi, I'm {self.name} and I'm {self.age} years old.")
+
+# Create a Person object
+p1 = Person("Alice", 25)
+
+# Call the greet method
+p1.greet()
+
+# Output
+# Hi, I'm Alice and I'm 25 years old.
+```
+
+* Inside any method: `self.name`, `self.age`, etc., access data **specific to that object**.
+
+---
+
+### 🧠 Typical Structure of a Python Class
+
+```python
+class ClassName:
+    def __init__(self, arg1, arg2, ...):
+        self.attr1 = arg1
+        self.attr2 = arg2
+        # Other instance-specific data
+
+    def method1(self):
+        # Action using self.attr1, self.attr2
+        pass
+
+    def method2(self, param):
+        # Action using external parameter and internal state
+        pass
+```
+
+* Optional methods:
+
+  * `__str__`: Custom string representation
+  * `@classmethod`: Method that works on the class itself
+  * `@staticmethod`: Method that doesn’t use self or cls
+
+---
+
+### ✅ Key Concepts
+
+| Concept          | Meaning                                                             |
+| ---------------- | ------------------------------------------------------------------- |
+| `class`          | Defines a custom data type or blueprint                             |
+| `object`         | Instance of a class, created using `ClassName()`                    |
+| `__init__`       | Initializes object with default or passed-in values                 |
+| `self`           | Refers to the current object; used to access its attributes/methods |
+| `self.attribute` | Stores data in the object (e.g., `self.name = name`)                |
+| Method call      | `obj.method()` automatically passes `self`                          |
+
+---
+
+### ❓Can a class work without `__init__`?
+
+* ✅ Yes. Python provides a default constructor if you don’t define one.
+* Useful for utility classes or when no instance variables are needed.
+
+---
+
+### Usage Example
+```python
+class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def show_balance(self):
+        print(f"{self.owner}'s balance is ${self.balance}")
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited ${amount}. New balance is ${self.balance}")
+
+# Create an object (instance)
+acc1 = BankAccount("Alice", 1000)
+
+# Call methods
+acc1.show_balance()       # Output: Alice's balance is $1000
+acc1.deposit(500)         # Output: Deposited $500. New balance is $1500
+acc1.show_balance()       # Output: Alice's balance is $1500
+
+# Print variables directly
+print(acc1.owner)    # Output: Alice
+print(acc1.balance)  # Output: 1500
+```
 
 ## References
 - Reference from my own artical on medium: [Python基礎語法](https://medium.com/@LiuIan/python%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95-a067e7efe472)

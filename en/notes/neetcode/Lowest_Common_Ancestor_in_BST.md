@@ -43,63 +43,47 @@ date: YYYY-MM-DD
 
 ## 🧠 My Python Solution
 
+
 ```python
 # Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
 class Solution:
-    def build_tree_from_list(data):
-        if not data or data[0] is None:
-            return None
-        
-        nodes = []
-        for val in data:
-            if val is not None:
-                nodes.append(TreeNode(val))
-            else:
-                nodes.append(None)
-
-        for i in range(len(data)):
-            if nodes[i]:
-                left_index = 2 * i + 1
-                right_index = 2 * i + 2
-                if left_index < len(data):
-                    nodes[i].left = nodes[left_index]
-                if right_index < len(data):
-                    nodes[i].right = nodes[right_index]
-        
-        return nodes[0]
-
-    # Find p and q and record path(ancestors) in the mean time
-    def find_path(node, target, path):
+    # Helper function to find path from root to target node
+    def find_path(self, node, target, path):
         if not node:
             return False
         
         path.append(node)
 
-        if node == target:
+        if node.val == target.val:
             return True
 
-        if find_path(node.left, target, path) or find_path(node.right, target, path):
+        if self.find_path(node.left, target, path) or self.find_path(node.right, target, path):
             return True
         
         path.pop()
-
         return False
 
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+        path_p = []
+        path_q = []
 
-    def lowest_common_ancestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        path_p = [] # Find p and record path(ancestors) in the mean time
-        path_q = [] # Find q and record path(ancestors) in the mean time
-        find_path(root, p, path_p)
-        find_path(root, q, path_q)
+        found_p = self.find_path(root, p, path_p)
+        found_q = self.find_path(root, q, path_q)
 
-        
-    
+        if not found_p or not found_q:
+            return None  # One of the nodes was not found in the tree
+
+        i = 0
+        while i < len(path_p) and i < len(path_q) and path_p[i] == path_q[i]:
+            i += 1
+
+        return path_p[i - 1]
 ```
 
 ## 💡 Thought Process
