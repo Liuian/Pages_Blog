@@ -48,7 +48,7 @@ This section gathers learning notes and insights from my studies and technical e
 <details>
   <summary>Posts</summary>
   <ul>
-    <li><a href="https://liuian.github.io/pages-blog/en/notes/neetcode/README">Leetcode/Needcode Practice</a> - My practice note about Leetcode/Neetcode.</li>
+    <li><a href="https://liuian.github.io/pages-blog/en/notes/neetcode/overview">Leetcode/Needcode Practice</a> - My practice note about Leetcode/Neetcode.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/notes/depth_first_search_in_python">depth_first_search_in_python</a> - How to implement DFS in Python and apply it to graph data structures.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/notes/time_complexity">time_complexity</a> - An overview of time complexity concepts for evaluating algorithm efficiency.</li>
   </ul>
