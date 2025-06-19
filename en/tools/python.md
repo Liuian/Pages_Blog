@@ -4,100 +4,12 @@ title: Python
 ---
 # python
 
-## Outline
-
-<details>
-<summary>1. <a href="#1-fiona-and-gis-data-handling">Fiona and GIS Data Handling</a></summary>
-
-- Introduction to Fiona  
-- Streaming GIS data formats (GeoPackage, Shapefile)  
-- Fiona official documentation  
-
-</details>
-
-<details>
-<summary>2. <a href="#2-python-variables-and-mutable-objects">Python Variables and Mutable Objects</a></summary>
-
-- Variable Assignment and References  
-- Mutable vs Immutable Objects  
-- Passing Mutable Objects to Functions  
-- Creating Copies to Prevent Side Effects  
-- Deep Copy vs Shallow Copy  
-- GeoDataFrame Example: Copy vs Reference  
-
-</details>
-
-<details>
-<summary>3. <a href="#3-python-variable-assignment-and-reassignment">Python Variable Assignment and Reassignment</a></summary>
-
-- Why reassignment creates new references  
-- Example: Filtering DataFrame and variable reassignment  
-
-</details>
-
-<details>
-<summary>4. <a href="#4-dfs-example-mutable-list-passed-to-function">DFS Example: Mutable List Passed to Function</a></summary>
-
-- Why we do not need to return the path list  
-- Mutability of lists explained with examples  
-
-</details>
-
-<details>
-<summary>5. <a href="#5-multi-file-geojson-processing-setup">Multi-File GeoJSON Processing Setup</a></summary>
-
-- `main_process.py` — Single File Processing  
-- `batch_processor.py` — Batch Processing Script  
-- Summary of running batch processing  
-
-</details>
-
-<details>
-<summary>6. <a href="#6-shapely-geometry-attributes">Shapely Geometry Attributes</a></summary>
-
-- `.coords` attribute and usage  
-- `.geoms` attribute for MultiPolygons  
-
-</details>
-
-<details>
-<summary>7. <a href="#7-python-language-basics-and-constructs">Python Language Basics and Constructs</a></summary>
-
-- For Loops and `range()`  
-- Lists: Length, Indexing, Append, Remove  
-- Checking if List is Empty  
-- List of Objects Example  
-- Useful List Methods: `enumerate()`, `pop()`  
-- Control Flow Keywords: `break`, `continue`, `pass`  
-- Dictionaries, HashMaps, and `get()`  
-- String Manipulation: Removing Spaces, Special Characters, Case Conversion  
-- Tuples: Characteristics and Usage  
-- Sorting Lists and Tuples  
-- Linked Lists: Traversal and Checks  
-
-</details>
-
-<details>
-<summary>8. <a href="#8-python-classes-objects-and-self">Python Classes, Objects, and <code>self</code></a></summary>
-
-- What is a Class?  
-- What is an Object?  
-- The `__init__` Method (Constructor)  
-- Understanding `self`  
-- Typical Class Structure Example  
-- Optional Methods: `__str__`, `@classmethod`, `@staticmethod`  
-- Usage Example: BankAccount Class  
-- FAQ: Can a class work without `__init__`?  
-
-</details>
-
-
 ## Fiona
 - Deal with large size geo files
 - Fiona streams simple feature data to and from GIS formats like GeoPackage and Shapefile.
 - [Fiona website](https://fiona.readthedocs.io/en/stable/README.html)
 
-## How variables handle mutable objects (like `lists`, `dicts`, and `DataFrames`) in Python
+## How variables handle mutable objects in Python
 
 ### Question 1
 - python 函數中的變數為何也會更改到原始變數?在以下例子中，gdf被新增了面積及面積區間欄位。
@@ -378,7 +290,7 @@ def find_path(node, target, path):
     print(my_list)  # Output: [1, 2]
     ```
 
-## steps to set up a system for processing multiple GeoJSON files using two separate Python files:
+## Python Variable Assignment and Reassignment
 ### 1. **Create `main_process.py`**
    - **Purpose**: Contains the core logic to process a single GeoJSON file.
    - **Function**: Define a function (e.g., `process_geojson(input_file, output_file)`) that takes the input GeoJSON file path and the output TSV file path as parameters.
@@ -447,7 +359,7 @@ for file_name in os.listdir(input_dir):
 
 By organizing your code in this way, you can maintain a clean separation of concerns while making it easy to process multiple files efficiently.
 
-## shpaely
+## Shapely Geometry Attributes
 
 ### geometry.coords
 The `geometry.coords` attribute provides direct access to the coordinate sequence of a Shapely geometry, such as a `LineString` or `Point`. It returns the actual points (as a list of `(x, y)` tuples) that define the geometry's shape.
@@ -465,7 +377,7 @@ In short, `geometry.coords` is used to get all points for simpler geometries, bu
 - `geometry` -> `goemetry.geoms`
 - reference: [shapely Geometry](https://shapely.readthedocs.io/en/2.0.3/geometry.html)
 
-## python language
+## Python Language Basics
 ### for loop
 ```python
 sequences = [0, 1, 2, 3, 4, 5]
@@ -805,7 +717,7 @@ print("Sorted by Age:", people)
 3. 可包含多種類型的元素：元組可以包含不同類型的數據，例如整數、浮點數、字符串、列表甚至其他元組。
 4. 使用圓括號表示：元組用圓括號 () 表示，而列表用方括號 [] 表示。
 
-## `Class`, `Object`, and `Self`
+## Python `Class`, `Object`, and `Self`
 Sure! Here's your updated **complete note**, now including a section about the **typical structure of a Python class**.
 
 ### 🧱 What is a **class**?

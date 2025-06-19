@@ -1,7 +1,7 @@
 ---
 title: ...
 tags: [NeetCode, LeetCode, ..., ..., Easy]
-date: YYYY-MM-DD
+date: 2025-06-19
 ---
 
 ## 🔗 LeetCode Link  
