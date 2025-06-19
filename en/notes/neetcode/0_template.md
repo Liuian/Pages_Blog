@@ -1,11 +1,11 @@
 ---
 title: ...
-tags: [NeetCode, LeetCode, ..., ..., Easy]
+tags: [NeetCode, LeetCode, Easy, ...]
 date: 2025-06-19
 ---
 
 ## 🔗 LeetCode Link  
-[... - LeetCode](https://leetcode.com/problems/xxx)
+[NeetCode](https://leetcode.com/problems/xxx)
 
 ## 🧾 Problem Description  
 > ...

@@ -1,11 +1,11 @@
 ---
-title: ...
-tags: [NeetCode, LeetCode, ..., ..., Easy]
+title: Lowest Common Ancestor In Binary Search Tree
+tags: [NeetCode, LeetCode, Medium]
 date: 2025-06-19
 ---
 
-## 🔗 LeetCode Link  
-[... - LeetCode](https://leetcode.com/problems/xxx)
+## 🔗 LeetCode Link
+[NeetCode](https://neetcode.io/problems/lowest-common-ancestor-in-binary-search-tree?list=blind75)
 
 ## 🧾 Problem Description  
 > Given a binary search tree (BST) where all node values are unique, and two nodes from the tree p and q, return the lowest common ancestor (LCA) of the two nodes.
@@ -13,7 +13,7 @@ date: 2025-06-19
 > The lowest common ancestor between two nodes p and q is the lowest node in a tree T such that both p and q as descendants. The ancestor is allowed to be a descendant of itself.
 
 - Example:
-    - ![alt text](image.png)
+    - ![alt text](/pages-blog/assets/images/notes/lowest_commom_ancestor_in_bst.png)
 - Example 1
     - Input: root = [5,3,8,1,4,7,9,null,2], p = 3, q = 8; Output: 5
 
