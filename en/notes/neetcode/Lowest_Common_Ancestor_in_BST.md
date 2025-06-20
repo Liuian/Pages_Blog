@@ -47,47 +47,47 @@ date: 2025-06-19
 ## 🧠 My Python Solution
 - Solution 1
 
-```python
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+    ```python
+    # Definition for a binary tree node.
+    # class TreeNode:
+    #     def __init__(self, val=0, left=None, right=None):
+    #         self.val = val
+    #         self.left = left
+    #         self.right = right
 
-class Solution:
-    # Helper function to find path from root to target node
-    def find_path(self, node, target, path):
-        if not node:
+    class Solution:
+        # Helper function to find path from root to target node
+        def find_path(self, node, target, path):
+            if not node:
+                return False
+            
+            path.append(node)
+
+            if node.val == target.val:
+                return True
+
+            if self.find_path(node.left, target, path) or self.find_path(node.right, target, path):
+                return True
+            
+            path.pop()
             return False
-        
-        path.append(node)
 
-        if node.val == target.val:
-            return True
+        def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+            path_p = []
+            path_q = []
 
-        if self.find_path(node.left, target, path) or self.find_path(node.right, target, path):
-            return True
-        
-        path.pop()
-        return False
+            found_p = self.find_path(root, p, path_p)
+            found_q = self.find_path(root, q, path_q)
 
-    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        path_p = []
-        path_q = []
+            if not found_p or not found_q:
+                return None  # One of the nodes was not found in the tree
 
-        found_p = self.find_path(root, p, path_p)
-        found_q = self.find_path(root, q, path_q)
+            i = 0
+            while i < len(path_p) and i < len(path_q) and path_p[i] == path_q[i]:
+                i += 1
 
-        if not found_p or not found_q:
-            return None  # One of the nodes was not found in the tree
-
-        i = 0
-        while i < len(path_p) and i < len(path_q) and path_p[i] == path_q[i]:
-            i += 1
-
-        return path_p[i - 1]
-```
+            return path_p[i - 1]
+    ```
 
 - Solution 2
 
