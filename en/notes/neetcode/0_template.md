@@ -22,3 +22,7 @@ def XXX():
 
 ## 💡 Thought Process
 ...
+
+
+## 📘 Note
+...
