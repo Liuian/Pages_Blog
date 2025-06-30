@@ -8,16 +8,13 @@ date: 2025-06-19
 [NeetCode](https://leetcode.com/problems/xxx)
 
 ## 🧾 Problem Description  
-> ...
+- ...
 
----
 
 ## 🧠 My Python Solution
 
 ```python
-# ...
-def XXX():
-    pass
+...
 ```
 
 ## 💡 Thought Process

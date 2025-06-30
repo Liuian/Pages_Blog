@@ -40,10 +40,6 @@ date: 2025-06-19
 
     - Hint 4: The LCA can also be one of the nodes, p or q, if the current node is equal to either of them. This is because if we encounter either p or q during the traversal, that node is the LCA.
 
----
-
-
-
 ## 🧠 My Python Solution
 
 **Solution 1**
@@ -90,6 +86,10 @@ class Solution:
 ```
 
 - Solution 2
+    - Reference: [Lowest Common Ancestor of a Binary Search Tree - Leetcode 235 - Python](https://youtu.be/gs2LMfuOR9k)
+```python
+TODO
+```
 
 ## 💡 Thought Process
 - First idea
@@ -100,5 +100,7 @@ class Solution:
     1. Find the path from the root to each target node.
     2. Compare thers tow paths to identify the last common node.
 
+- Third idea - After watching video Explanation and read hints
+    
 
 ## 📘 Note
