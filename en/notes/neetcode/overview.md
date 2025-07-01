@@ -136,7 +136,7 @@ I organize them by topic for better focus and revision.
 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | DFS |  |
 | Validate Binary Search Tree | Medium | DFS |  |
 | Kth Smallest Element in a BST | Medium | DFS |  |
-| [Lowest Common Ancestor in BST](https://liuian.github.io/pages-blog/en/notes/neetcode/Lowest_Common_Ancestor_in_BST) | Medium | BST | 2025.06.19 |
+| [Lowest Common Ancestor in BST](https://liuian.github.io/pages-blog/en/notes/neetcode/Lowest_Common_Ancestor_in_BST ) | Medium | BST | 2025.06.19 |
 | Implement Trie (Prefix Tree) | Medium | Trie |  |
 | Add and Search Word | Medium | Trie |  |
 | Word Search II | Hard | Trie, DFS |  |
