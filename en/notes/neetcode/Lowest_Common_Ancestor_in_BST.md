@@ -88,7 +88,19 @@ class Solution:
 - Solution 2
     - Reference: [Lowest Common Ancestor of a Binary Search Tree - Leetcode 235 - Python](https://youtu.be/gs2LMfuOR9k)
 ```python
-TODO
+class Solution:
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+        cur = root
+
+        while cur:
+            if p.val > cur.val and q.val > cur.val:
+                cur = cur.right
+            elif p.val < cur.val and q.val < cur.val:
+                cur = cur.left
+            else:
+                return cur
+    
+        return None
 ```
 
 ## 💡 Thought Process
@@ -101,6 +113,6 @@ TODO
     2. Compare thers tow paths to identify the last common node.
 
 - Third idea - After watching video Explanation and read hints
-    
+
 
 ## 📘 Note
