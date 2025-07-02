@@ -86,6 +86,7 @@ class Solution:
 ```
 
 **Solution 2**
+
 Reference: [Lowest Common Ancestor of a Binary Search Tree - Leetcode 235 - Python](https://youtu.be/gs2LMfuOR9k)
 
 ```python
