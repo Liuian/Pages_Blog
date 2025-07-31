@@ -9,4 +9,4 @@
 
 ### 改字體大小
 - `window` -> `perferences` -> `User interface` -> `appearance` -> `colors and font` -> `DBeaver Fonts` -> `Main Font`
-- ![alt text](/pages-blog/assets/images/tools/database-1.png)
+- ![alt text](/Pages_Blog/assets/images/tools/database-1.png)

@@ -13,17 +13,17 @@ title: VScode
 # remote ssh
 1. install extension in vscode
     - install remote ssh, it will also install other two extension
-    - ![alt text](/pages-blog/assets/images/tools/vscode-1.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/vscode-1.png)
 
 2. Set Up SSH Configuration
     - Open the Command Palette by pressing `Ctrl + Shift + P` and type `Remote-SSH: Open Configuration File`.
     - Select the SSH configuration file to edit (usually ~/.ssh/config).
-    - ![alt text](/pages-blog/assets/images/tools/vscode-3.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/vscode-3.png)
 3. Connect to the Remote Server
     - Open the Command Palette again (`Ctrl + Shift + P`) and type `Remote-SSH: Connect to Host`.
     - Select the my_remote_server entry (or whatever name you used).
     - VS Code will connect to the remote server and open a new window.
-    - ![alt text](/pages-blog/assets/images/tools/vscode-2.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/vscode-2.png)
 4. Select Miniconda Python Environment
     - After connecting to the remote server, press `Ctrl + Shift + P` again and search for `Python: Select Interpreter`.
 
@@ -41,7 +41,7 @@ title: VScode
 1. 打开 VS Code 设置： Windows/Linux: `Ctrl + ,`
 2. 搜索 `Jupyter Command Line Arguments`
 3. click `edit in settings.json`
-    - ![alt text](/pages-blog/assets/images/tools/jupyter-4.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/jupyter-4.png)
 4. add arguments - `"--port=8886"`
     ```json
     {

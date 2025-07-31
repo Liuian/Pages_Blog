@@ -8,24 +8,24 @@ title: GIS & QGIS & Overpass
 
 # QGIS
 ## 根據columns上色
-- ![alt text](/pages-blog/assets/images/tools/qgis-10.png)
+- ![alt text](/Pages_Blog/assets/images/tools/qgis-10.png)
 - 記得點`classify`才可渲染
 - 好看的顏色
-    - ![alt text](/pages-blog/assets/images/tools/qgis-11.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-11.png)
 
 ## 調整geomatric    
 - 因tsv無法編輯，用這個方法變成暫存檔
-    - ![alt text](/pages-blog/assets/images/tools/qgis.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis.png)
 - 用節點工具編輯向外拉
-    - ![alt text](/pages-blog/assets/images/tools/qgis-1.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-1.png)
 
 ## 刪除geomatry
 1. TSV無法編輯，存成暫存檔
-    - ![alt text](/pages-blog/assets/images/tools/qgis-3.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-3.png)
 2. 選取geomatry
-    - ![alt text](/pages-blog/assets/images/tools/qgis-4.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-4.png)
 3. open `attribute table`, click `trash can` to delete
-    - ![alt text](/pages-blog/assets/images/tools/qgis-2.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-2.png)
 
 ## Steps to Save Selected Geometries as a New Layer:
 1. Select the Geometries:
@@ -44,13 +44,13 @@ title: GIS & QGIS & Overpass
 
 ## 計算統計資料ex: sum
 1. 右鍵選擇 `Processing Toolbox Panal`
-    - ![alt text](/pages-blog/assets/images/tools/qgis-5.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-5.png)
 2. 在panal中選 `basic statistics for fields`
-    - ![alt text](/pages-blog/assets/images/tools/qgis-6.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-6.png)
 3. `select features` 選範圍
-    - ![alt text](/pages-blog/assets/images/tools/qgis-7.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-7.png)
 4. `run` and find statisticsin it
-    - ![alt text](/pages-blog/assets/images/tools/qgis-8.png)
+    - ![alt text](/Pages_Blog/assets/images/tools/qgis-8.png)
 
 ## 切割圖形
 o	取出其中一個要切的PU
@@ -59,7 +59,7 @@ o	若想重切 merge selected features
 o	取消選擇feature:  
 
 ## 表格新增欄位
-- ![alt text](/pages-blog/assets/images/tools/qgis-9.png)
+- ![alt text](/Pages_Blog/assets/images/tools/qgis-9.png)
 
 # Overpass turbo
 ## search layer is negative

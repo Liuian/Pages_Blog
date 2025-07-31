@@ -6,7 +6,7 @@ title: Github Pages
 # 利用 Github Pages 免費架一個靜態網頁
 
 ## Step 0: 靜態網頁 vs. 動態網頁
-![image](/pages-blog/assets/images/tools/static_vs_dynamic_web_page.jpg)
+![image](/Pages_Blog/assets/images/tools/static_vs_dynamic_web_page.jpg)
 
 
 ## Step 1: 設定自動同步 readme.md & index.md 腳本
@@ -122,7 +122,7 @@ title: Home
 `.md` 或 HTML 裡寫上絕對路徑：
 
 ```liquid
-![for loop](/pages-blog/assets/images/tools/flowchart-for-loop.jpeg)
+![for loop](/Pages_Blog/assets/images/tools/flowchart-for-loop.jpeg)
 ```
 
 ## Step 4: 進階設定
@@ -305,7 +305,7 @@ title: 任意標題
 這樣才能套用我們剛剛改的 `default.html`！
 
 ### 5.2 解決插入sidebar後圖片變超大
-- 現象: ![github_pages_image_size](/pages-blog/assets/images/tools/github_pages_image_size.jpg)
+- 現象: ![github_pages_image_size](/Pages_Blog/assets/images/tools/github_pages_image_size.jpg)
 - 原因: 沒有限制圖片寬度
 - 解法: 在 `assets/css/style.scss` 加入以下這段
 
@@ -433,7 +433,7 @@ p code, li code {
 
 ### 5.5 處理手機板TOC排版
 - For example:
-![image](/pages-blog/assets/images/tools/github_pages_5-5.jpg)
+![image](/Pages_Blog/assets/images/tools/github_pages_5-5.jpg)
 
 - 將style.css `@media` 部分改為
 
@@ -564,10 +564,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Back to home 功能（只有在不是首頁時顯示）
-    if (window.location.pathname !== "/pages-blog/" && window.location.pathname !== "/pages-blog/index.html") {
+    if (window.location.pathname !== "/Pages_Blog/" && window.location.pathname !== "/Pages_Blog/index.html") {
         const backHomeLink = document.createElement("a");
         backHomeLink.textContent = "← Home";
-        backHomeLink.href = "https://liuian.github.io/pages-blog/";
+        backHomeLink.href = "https://liuian.github.io/Pages_Blog/";
         backHomeLink.className = "back-home-link";
         document.body.appendChild(backHomeLink);
     }
@@ -622,11 +622,11 @@ document.addEventListener("DOMContentLoaded", function () {
 ```html
 <nav class="navbar">
     <div class="nav-links">
-        <a href="https://liuian.github.io/pages-blog/">Home</a>
-        <a href="https://liuian.github.io/pages-blog/tools/">Tools</a>
-        <a href="https://liuian.github.io/pages-blog/notes/">Notes</a>
-        <a href="https://liuian.github.io/pages-blog/blog/">Blog</a>
-        <a href="https://liuian.github.io/pages-blog/about/">About</a>
+        <a href="https://liuian.github.io/Pages_Blog/">Home</a>
+        <a href="https://liuian.github.io/Pages_Blog/tools/">Tools</a>
+        <a href="https://liuian.github.io/Pages_Blog/notes/">Notes</a>
+        <a href="https://liuian.github.io/Pages_Blog/blog/">Blog</a>
+        <a href="https://liuian.github.io/Pages_Blog/about/">About</a>
     </div>
 </nav>
 ```
