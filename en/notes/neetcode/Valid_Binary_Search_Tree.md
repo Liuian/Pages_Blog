@@ -10,14 +10,14 @@
         - Both the left and right subtrees are also binary search trees.
     
     - Example 1:
-        - ![alt text](./image_needcode/valid_BST_1.png)
+        - ![alt text](/Pages_Blog/assets/images/notes/valid_BST_1.png)
         ```
         Input: root = [2,1,3]
         Output: true
         ```
     
     - Example 2:
-        - ![alt text](./image_needcode/valid_BST_2.png)
+        - ![alt text](/Pages_Blog/assets/images/notes/valid_BST_2.png)
         ```
         Input: root = [1,2,3]
         Output: false
