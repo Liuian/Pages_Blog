@@ -10,14 +10,14 @@ Here you'll find a collection of practical tools and scripts related to programm
       <details>
         <summary>Python Code</summary>
         <ul>
-          <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/find_large_file">find_large_file</a></li>
+          <li><a href="/en/tools/python_code/find_large_file">find_large_file</a></li>
           <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></li>
           <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/paysdesfees">paysdesfees</a></li>
           <li><a href="https://github.com/Liuian/pages-blog/tree/main/en/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></li>
         </ul>
       </details>
     </li>  
-    <li><a href="https://liuian.github.io/pages-blog/en/tools/autohotkey">autohotkey</a> - Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</li>
+    <li><a href="/en/tools/autohotkey">autohotkey</a> - Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/docker">docker</a> - A basic introduction to Docker, helping you build and manage containerized applications.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/excel">excel</a> - Handy Excel VBA scripts for automating repetitive tasks and improving productivity.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/flowchart">flowchart</a> - Flowchart examples to help visualize programming logic and processes.</li>
