@@ -22,7 +22,7 @@ Here you'll find a collection of practical tools and scripts related to programm
         </ul>
       </details>
     </li>  
-    <li><a href="/en/tools/autohotkey">autohotkey</a> - Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</li>
+    <li><a href="/Pages_Blog/en/tools/autohotkey">autohotkey</a> - Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/docker">docker</a> - A basic introduction to Docker, helping you build and manage containerized applications.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/excel">excel</a> - Handy Excel VBA scripts for automating repetitive tasks and improving productivity.</li>
     <li><a href="https://liuian.github.io/pages-blog/en/tools/flowchart">flowchart</a> - Flowchart examples to help visualize programming logic and processes.</li>
