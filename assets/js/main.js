@@ -34,20 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // 語言切換
-    const langMatch = window.location.pathname.match(/\/pages-blog\/(en|zh|nl|de)\//); // 偵測當前語言碼
+    const langMatch = window.location.pathname.match(/\/Pages_Blog\/(en|zh|nl|de)\//); // 偵測當前語言碼
     const lang = langMatch ? langMatch[1] : "en"; // 預設語言為英文
-    document.getElementById("home-link").href  = `/pages-blog/${lang}/`; // 動態更新連結
-    document.getElementById("tools-link").href = `/pages-blog/${lang}/tools/`; // 動態更新連結
-    document.getElementById("notes-link").href = `/pages-blog/${lang}/notes/`; // 動態更新連結
-    document.getElementById("blog-link").href  = `/pages-blog/${lang}/blog/`; // 動態更新連結
-    document.getElementById("about-link").href = `/pages-blog/${lang}/about`; // 動態更新連結
+    document.getElementById("home-link").href  = `/Pages_Blog/${lang}/`; // 動態更新連結
+    document.getElementById("tools-link").href = `/Pages_Blog/${lang}/tools/`; // 動態更新連結
+    document.getElementById("notes-link").href = `/Pages_Blog/${lang}/notes/`; // 動態更新連結
+    document.getElementById("blog-link").href  = `/Pages_Blog/${lang}/blog/`; // 動態更新連結
+    document.getElementById("about-link").href = `/Pages_Blog/${lang}/about`; // 動態更新連結
     const langSelect = document.getElementById('language-select'); // 語言選單初始化
     langSelect.value = `/${lang}/`; // 語言選單初始化
         // 語言變更時切換網址
     langSelect.addEventListener('change', function () {
         const selectedLang = this.value.replace(/\//g, ''); // e.g. "zh"
         const currentPath = window.location.pathname;
-        const newPath = currentPath.replace(/\/pages-blog\/(en|zh|nl|de)\//, `/pages-blog/${selectedLang}/`); // 替換語言碼
+        const newPath = currentPath.replace(/\/Pages_Blog\/(en|zh|nl|de)\//, `/Pages_Blog/${selectedLang}/`); // 替換語言碼
         window.location.pathname = newPath; // 導向
     });
 });
