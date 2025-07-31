@@ -130,13 +130,13 @@ I organize them by topic for better focus and revision.
 | Same Tree | Easy | DFS |  |
 | Invert Binary Tree | Easy | DFS |  |
 | Binary Tree Maximum Path Sum | Hard | DFS |  |
-| Binary Tree Level Order Traversal | Medium | BFS |  |
+| [Binary Tree Level Order Traversal](https://liuian.github.io/Pages_Blog/en/notes/neetcode/Binary_Tree_Level_Order_Traversal) | Medium | BFS | 2025.07.24 |
 | Serialize and Deserialize Binary Tree | Hard | DFS, BFS |  |
 | Subtree of Another Tree | Easy | DFS |  |
 | Construct Binary Tree from Preorder and Inorder Traversal | Medium | DFS |  |
-| Validate Binary Search Tree | Medium | DFS |  |
+| [Validate Binary Search Tree](https://liuian.github.io/Pages_Blog/en/notes/neetcode/Valid_Binary_Search_Tree) | Medium | DFS | 2025.07.30 |
 | Kth Smallest Element in a BST | Medium | DFS |  |
-| [Lowest Common Ancestor in BST](https://liuian.github.io/pages-blog/en/notes/neetcode/Lowest_Common_Ancestor_in_BST ) | Medium | BST | 2025.06.19 |
+| [Lowest Common Ancestor in BST](https://liuian.github.io/Pages_Blog/en/notes/neetcode/Lowest_Common_Ancestor_in_BST ) | Medium | BST | 2025.06.19 |
 | Implement Trie (Prefix Tree) | Medium | Trie |  |
 | Add and Search Word | Medium | Trie |  |
 | Word Search II | Hard | Trie, DFS |  |
