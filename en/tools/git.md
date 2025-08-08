@@ -155,12 +155,26 @@ cat ~/.ssh/id_ed25519.pub
 cat ~/.ssh/id_rsa.pub
 ```
 
----
-
 > **提示**：輸出的內容是你要複製並貼到 GitLab SSH Keys 頁面的公鑰文字。
 
 
+### 🧾 查看曾經連過的 SSH 主機列表
 
+你可以透過查看 `~/.ssh/known_hosts` 檔案來列出曾經使用 SSH 連線過的主機。
+
+#### ✅ 指令
+
+```bash
+cut -f1 -d' ' ~/.ssh/known_hosts | sed 's/,.*//'
+```
+
+#### 🔍 指令說明
+
+* `cut -f1 -d' '`
+  ➤ 取得每行空格前的第一欄（通常是主機名稱或 IP）
+
+* `sed 's/,.*//'`
+  ➤ 去掉逗號後面的內容（處理多個主機名的情況，只保留主要主機名）
 
 ## Note
 - commit 階段 如果只下 `git commit` + `enter` 可以進入預設的編輯器，這樣就可以一次commit多行
