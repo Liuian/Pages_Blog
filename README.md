@@ -42,6 +42,33 @@ Here you'll find a collection of practical tools and scripts related to programm
 This section gathers learning notes and insights from my studies and technical exploration. It covers a wide range of topics and aims to serve as a helpful reference for anyone diving into similar areas.
 <details>
   <summary>Posts</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/notes/neetcode/overview">Leetcode/Neetcode Practice</a></td>
+        <td>My practice note about Leetcode/Neetcode.</td>
+      </tr>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/notes/depth_first_search_in_python">depth_first_search_in_python</a></td>
+        <td>How to implement DFS in Python and apply it to graph data structures.</td>
+      </tr>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/notes/time_complexity">time_complexity</a></td>
+        <td>An overview of time complexity concepts for evaluating algorithm efficiency.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
+
+<details>
+  <summary>Posts</summary>
   <ul>
     <li><a href="https://liuian.github.io/Pages_Blog/en/notes/neetcode/overview">Leetcode/Needcode Practice</a> - My practice note about Leetcode/Neetcode.</li>
     <li><a href="https://liuian.github.io/Pages_Blog/en/notes/depth_first_search_in_python">depth_first_search_in_python</a> - How to implement DFS in Python and apply it to graph data structures.</li>

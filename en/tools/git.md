@@ -23,6 +23,7 @@ title: Git
 - first push. Check current branch name: `git branch`
 - first push: `git push -u origin [branch name]`
 - `git push`
+- `git rm --cached <檔案或資料夾路徑>` : 將檔案從索引中移除（不刪本地檔案）
 
 ## branch
 - check current branch name: `git branch`
