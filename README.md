@@ -3,36 +3,6 @@ This is where I share tools, notes, and thoughts as I learn and build.
 
 ## Tools
 Here you'll find a collection of practical tools and scripts related to programming, data processing, automation, and more. Each post is designed to be concise and useful, helping you work smarter with real-world examples.
-<details id="python-code">
-  <summary>Python Code</summary>
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="/en/tools/python_code/find_large_file">find_large_file</a></td>
-        <td>Find large files on disk efficiently.</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Liuian/Pages_Blog/tree/main/en/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></td>
-        <td>Merge JPGs and PDFs into a single document.</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Liuian/Pages_Blog/tree/main/en/tools/python_code/paysdesfees">paysdesfees</a></td>
-        <td>Image-to-PDF conversion and organization scripts.</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Liuian/Pages_Blog/tree/main/en/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></td>
-        <td>Convert audio files into text using Whisper model.</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
-
 <details>
   <summary>Posts</summary>
   <table>
@@ -114,6 +84,36 @@ Here you'll find a collection of practical tools and scripts related to programm
       <tr>
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/wins">wins</a></td>
         <td>Windows usage tips including virtualization settings and WSL installation guide.</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
+<details id="python-code">
+  <summary>Python Code</summary>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="/en/tools/python_code/find_large_file">find_large_file</a></td>
+        <td>Find large files on disk efficiently.</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Liuian/Pages_Blog/tree/main/en/tools/python_code/merge_jpgs_pdfs">merge_jpgs_pdfs</a></td>
+        <td>Merge JPGs and PDFs into a single document.</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Liuian/Pages_Blog/tree/main/en/tools/python_code/paysdesfees">paysdesfees</a></td>
+        <td>Image-to-PDF conversion and organization scripts.</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/Liuian/Pages_Blog/tree/main/en/tools/python_code/whisper_audio_to_txt">whisper_audio_to_txt</a></td>
+        <td>Convert audio files into text using Whisper model.</td>
       </tr>
     </tbody>
   </table>
