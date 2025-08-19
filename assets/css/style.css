@@ -272,7 +272,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
         border-radius: 6px;
     }
 
-    #toggle-sidbar:hover {
+    #toggle-sidebar:hover {
         background: rgba(255, 255, 255, 0.15);
     }
 
