@@ -98,7 +98,6 @@ Here you'll find a collection of practical tools and scripts related to programm
         <td>Quick tmux guide: attach to sessions and detach from windows for efficient terminal multitasking.</td>
       </tr>
       <tr>
-      <tr>
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/vscode">vscode</a></td>
         <td>Useful tips and extensions for boosting development efficiency in Visual Studio Code.</td>
       </tr>
