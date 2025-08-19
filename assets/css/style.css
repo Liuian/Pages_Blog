@@ -262,7 +262,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
     }
 
     /* 漢堡選單按鈕 */
-    #menu-toggle {
+    #toggle-sidebar {
         background: none;
         border: none;
         font-size: 1.6rem;
@@ -272,7 +272,7 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
         border-radius: 6px;
     }
 
-    #menu-toggle:hover {
+    #toggle-sidbar:hover {
         background: rgba(255, 255, 255, 0.15);
     }
 
