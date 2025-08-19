@@ -12,13 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 切換 TOC 側邊欄顯示
     const toggleButton = document.getElementById("toggle-sidebar");
-    // -------test
-    const navLinks = document.querySelector(".nav-links");
-
-    toggleButton.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-    });
-    // -------test end
     const sidebar = document.querySelector(".sidebar");
     toggleButton.addEventListener("click", function () {
         const isCollapsed = sidebar.classList.toggle("collapsed");

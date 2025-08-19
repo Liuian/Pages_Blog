@@ -252,63 +252,17 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 }
 
 /* Responsive */
-@media (max-width: 768px) { 
-    /* Navbar layout */
-    .navbar {
-        flex-direction: row;            /* 保持一排 */ 
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.3rem 0.8rem;
-    }
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;  /* 自動換行 */
+    justify-content: center;
+    gap: 0.5rem;
+  }
 
-    /* 漢堡選單按鈕 */
-    #toggle-sidebar {
-        background: none;
-        border: none;
-        font-size: 1.6rem;
-        cursor: pointer;
-        color: white;
-        padding: 0.3rem 0.6rem;
-        border-radius: 6px;
-    }
-
-    #toggle-sidebar:hover {
-        background: rgba(255, 255, 255, 0.15);
-    }
-
-    /* 導覽列的 icon 清單 */
-    .nav-links {
-        display: none;               /* 預設收合 */
-        flex-direction: column;      /* 展開時直向 */
-        background: var(--primary-color);
-        position: absolute;
-        top: 100%;                   /* 放在 navbar 下方 */
-        left: 0;
-        width: 100%;
-        padding: 0.5rem 0;
-        z-index: 999;
-    }
-
-    .nav-links.show {
-        display: flex;               /* 展開時才顯示 */
-    }
-
-    .nav-links a {
-        padding: 0.6rem;
-        text-align: center;
-        font-size: 1rem;
-        color: white;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .nav-links a:last-child {
-        border-bottom: none;
-    }
-
-    /* icon + 文字縮小，不要大顆 */
-    .nav-links img {
-        width: 20px;
-        height: 20px;
-        margin-right: 0.4rem;
-    }
+  .nav-links a {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.5rem;
+  }
 }
