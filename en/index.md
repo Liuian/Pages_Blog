@@ -23,6 +23,14 @@ Here you'll find a collection of practical tools and scripts related to programm
         <td>Tips and scripts for using AutoHotkey to automate Windows workflows, including hotkeys and UI manipulation.</td>
       </tr>
       <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/tools/brew">brew</a></td>
+        <td>Essential macOS Homebrew tools and commands for Python, Git, terminal enhancements, and efficient software management.</td>
+      </tr>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/tools/database">database</a></td>
+        <td>A quick guide to using DBeaver for database management, including creating tables, exporting data between servers, and customizing font settings.</td>
+      </tr>
+      <tr>
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/docker">docker</a></td>
         <td>A basic introduction to Docker, helping you build and manage containerized applications.</td>
       </tr>
@@ -51,8 +59,20 @@ Here you'll find a collection of practical tools and scripts related to programm
         <td>Tips for using Google Drive desktop app and configuring sync settings.</td>
       </tr>
       <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/tools/java">java</a></td>
+        <td>Guide to setting up Java on Windows with Jabba, Gradle, and VS Code for project execution.</td>
+      </tr>
+      <tr>
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/linux">linux</a></td>
         <td>Common Linux commands and usage tips for improving efficiency in daily work.</td>
+      </tr>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/tools/mac_pyenv">mac_pyenv</a></td>
+        <td>Quick guide to managing Python environments on macOS with pyenv and pyenv-virtualenv, including setup, activation, and package management.</td>
+      </tr>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/tools/mac">mac</a></td>
+        <td>Troubleshooting Time Machine on macOS: formatting disks, resolving ‘disk in use’ errors, and preparing drives for backups.</td>
       </tr>
       <tr>
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/markdown">markdown</a></td>
@@ -78,6 +98,11 @@ Here you'll find a collection of practical tools and scripts related to programm
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/redmine">redmine</a></td>
         <td>A quick guide to Redmine usage for project management and issue tracking.</td>
       </tr>
+      <tr>
+        <td><a href="https://liuian.github.io/Pages_Blog/en/tools/tmux">tmux</a></td>
+        <td>Quick tmux guide: attach to sessions and detach from windows for efficient terminal multitasking.</td>
+      </tr>
+      <tr>
       <tr>
         <td><a href="https://liuian.github.io/Pages_Blog/en/tools/vscode">vscode</a></td>
         <td>Useful tips and extensions for boosting development efficiency in Visual Studio Code.</td>
