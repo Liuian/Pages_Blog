@@ -253,59 +253,11 @@ p code, li code {   /* code - Inline code styling (e.g. `example`) */
 
 /* Responsive */
 @media (max-width: 768px) { 
-    .container {
-        flex-direction: column;   /* 改成直式排列 */
-        padding: 0.5rem;
-    }
-
-    .sidebar-wrapper {
-        width: 100%;
-        margin: 0 0 1rem 0;       
-        position: relative;       /* 不要 sticky */
-    }
-
-    .sidebar {
-        width: 100%;
-        max-height: 0;            /* 預設收合 */
-        overflow: hidden;
-        background: #fff;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        margin-bottom: 0.5rem;
-        padding: 0;               /* ✅ 收合時不要 padding */
-        transition: max-height 0.3s ease, padding 0.3s ease;
-        position: relative;       /* ✅ 覆蓋桌機的 sticky */
-    }
-
-    .sidebar.expanded {
-        max-height: 70vh;         /* 展開高度 */
-        padding: 1rem;            /* 展開時才加 padding */
-    }
-
-    #toggle-sidebar {
-        width: 100%;              /* 全寬 */
-        margin-bottom: 0.5rem;
-        background: var(--primary-color);
-        color: var(--background-color);
-        font-weight: bold;
-        text-align: center;
-        border-radius: 6px;
-        padding: 0.6rem;
-        display: block;           /* ✅ 確保是區塊元素 */
-    }
-
-    #toggle-sidebar:hover {
-        background: var(--accent-color);
-    }
-
-    .content {
-        width: 100%;
-        min-width: auto;          /* ✅ 避免被 desktop 的 min-width 影響 */
-    }
-
-    .back-home-link {
-        margin-top: 1rem;
-        display: block;
+    /* Navbar layout */
+    .navbar {
+        flex-direction: row;            /* 保持一排 */ 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.3rem 0.8rem;
     }
 }
